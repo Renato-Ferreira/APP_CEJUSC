@@ -1,0 +1,9 @@
+npm init 
+npm install <pacote> --save
+
+git remote add origin https://github.com/Renato-Ferreira/TCC.git
+git push -u origin master
+
+Updates were rejected because the tip of your current branch is behind its remote counterpart. Integrate the remote changes (e.g. 'git pull ...') before pushing again. See the 'Note about fast-forwards' in 'git push --help' for details.
+
+npm install bootstrap --save jquery popper.js

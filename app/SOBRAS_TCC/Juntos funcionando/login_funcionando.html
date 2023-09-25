@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>C3 CEJUSC</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+        <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+        <script type="text/javascript" src="mainLogin.js"></script>
+    </head>
+
+    <body style="background-color: #DCDCDC;">
+        <div class="container-fluid" style="background-color: #40E0D0;">
+            <div class="row">
+                <div class="col-3" style="padding-top: 5px; padding-bottom: 5px;">
+                    <img src="./img/logo_box.png" width="150px" height="150px">
+                </div>
+                <div class="col" style="padding-top: 40px;">
+                    <h1 class="display-4"><strong>CENTRAL DE CONTROLE DO CEJUSC</strong></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4" style="padding-top: 20px;">
+                    <div class="card">
+                        <div class="card-header">
+                            ÁREA DE ACESSO
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L O G I N</h5>
+
+                            <form id="frm"> <!--action="" method="">-->
+                                <div class="form-group">
+                                    <label for="cpfUsuario">Usuário</label>
+                                    <input type="text" class="form-control" id="cpfUsuario" name="cpfUsuario" aria-describedby="userCadastrado" placeholder="CPF do usuário" required>
+                                    <small id="userCadastrado" class="form-text text-muted">Entre com o CPF do usuário cadastrado.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senhaUsuario">Senha</label>
+                                    <input type="password" class="form-control" id="senhaUsuario" name="senhaUsuario" placeholder="senha" required>
+                                </div>
+                                <button class="btn btn-primary" id="btnE">ENVIAR</button>                                                                
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+/*app.get('/home/:log', (req, res) => {
+    console.log(req.params.log);
+    if (req.params.log == "admin") {
+        app.use(express.static('public'));
+        res.redirect('../src/home.html');
+    }
+    else {
+        res.send("acesso negado");
+    }
+    
+});*/
+
+//app.use('/obrigatorio/:senha', express.static('public'));
+//app.get('/obrigatorio/:senha/*/*.*', (req, res) => {
+    /*if (req.params.senha == "pode") {
+        res.redirect('/obrigatorio/lllhh/src/home.html');
+    }
+    else {
+        res.send("NEGADO");
+    }
+});*/
+
+app.use('/:i(\\d\\d+3)', express.static('public'));
+app.route('/:i/src/*.*')
+    .get( (req,res, next) => {
+        console.dir(req.originalUrl + "<<<");
+        console.dir(req.baseUrl + "<<<");
+        console.dir(req.path + "<<<");
+        next();
+    })
+    .get( (req, res) => {
+        if (req.params.i == "pode") {
+            res.redirect('/883/src/home.html');
+        }
+        else {
+            res.send("NEGADO");
+        }
+    });
+	
+	
+	 async function embaralhaURL() {
+        let buf = new Buffer.alloc(16);
+        for (let i = 0; i < buf.length; i++) {
+            buf[i] = Math.floor(Math.random() * (123 - 97)) + 97;
+        }
+        let url = buf.toString('utf-8');
+        return url;
+    };
+
+    urlX = await embaralhaURL();
+    router.use(`/logado/${req.params.id}`, express.static('public'));
+    next();
+
+

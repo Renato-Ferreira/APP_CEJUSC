@@ -1,0 +1,16 @@
+/*function validar(end){
+        $.ajax({
+            url: end,
+            method: "GET",
+            data: {
+                user: "13326574860",
+                senha: "123@"
+            },
+            success: function(response){
+                alert(response);
+            },
+            error: function (response) {
+                alert(response);
+            }
+        });
+    }*/
