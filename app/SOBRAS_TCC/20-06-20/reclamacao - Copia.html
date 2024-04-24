@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>C3 CEJUSC</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+        <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+        
+        <link rel="stylesheet" href="../css/custom.css">
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/reclamacao.js"></script>
+  
+    </head>
+
+    <body>
+
+        <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar border-bottom border-success" id="navbarPrincipal">
+            <a class="navbar-brand" href="http://192.168.0.103:3000/">
+                <img src="../images/logo_boxB.png" width="40" height="40" class="d-inline-block align-center" alt="">
+                Central de Controle do CEJUSC
+            </a>
+
+            <div class="navbar-nav-scroll">
+                <ul class="navbar-nav bd-navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" id="1">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="2">Reclamação <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="3">Andamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="4">Pauta</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar-nav ml-md-auto">
+                <li class="dropdown" id="botaoUser">
+                    <button class="btn btn-outline-success dropdown-toggle mr-md-2" type="button" id="userRef" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SEM USUÁRIO
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" id="logout" data-toggle="tooltip" data-placement="right" title="AO CLICAR VOCÊ SAIRÁ DO SISTEMA"><b>LOGOUT</b></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Sobre o C³</a>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Nº Processo" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">BUSCA</button>
+            </form> 
+
+        </header>
+
+        <div class="container-fluid" id="principal">
+
+            <div class="row no-gutters">
+
+                <div class="col-2 border-right border-success" id="">
+
+                    <div class="input-group border-bottom border-success" id="formProcesso">
+                        <div class="form d-inline-flex mt-2 mr-2">
+                            <input type="text" class="form-control" id="numProcesso" name="numProcesso" aria-describedby="processoCadastrado" placeholder="Processo">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-success" id="btnEprocesso"><b>&#62;</b></button>
+                            </div>
+                        </div>
+                        <small id="processoCadastrado" class="form-text text-muted"><i>Ex.: 0000123-45.2020</i></small>
+                    </div>
+
+                    <div class="list-group mt-2" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action list-group-item-success" id="agendamento-list" data-toggle="list" href="#agendar" role="tab" aria-controls="agendar">Agendar</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" id="reclamante-list" data-toggle="list" href="#reclamante" role="tab" aria-controls="reclamante">Reclamante</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" id="reclamado-list" data-toggle="list" href="#reclamado" role="tab" aria-controls="reclamado">Reclamado</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" id="advogado-list" data-toggle="list" href="#advogado" role="tab" aria-controls="advogado">Advogado</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" id="menor-list" data-toggle="list" href="#menor" role="tab" aria-controls="menor">Menor</a>
+                    </div>
+
+                </div>
+
+                <div class="col-10 overflow-auto" id="conteudoPrincipal">
+
+                    <div class="ml-2" id="">
+
+                        <div class="alert alert-success" id="titulo1" role="alert">
+                            NENHUM PROCESSO SELECIONADO
+                        </div>
+
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <div class="tab-pane fade" id="agendar" role="tabpanel" aria-labelledby="list-agendar-list">
+                                
+                                <div class="row">
+                                    
+                                    <div class="col-5">
+
+                                        <div class="input-group" id="agendar-data">
+
+                                            <div class="form-inline" id="linha-1">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-data">Data:</span>
+                                                </div>
+                                                <input type="date" class="form-control" id="data" required>
+                                            </div>
+        
+                                        </div>
+
+                                        <div class="input-group" id="agendar-sala">
+
+                                            <div class="form-inline" id="linha-2">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-sala">Sala:</span>
+                                                </div>
+                                                <select class="custom-select" id="sala-inputGroupSelect" required>
+                                                    <option selected>Escolha...</option>
+                                                    <option value="1">SALA 1</option>
+                                                    <option value="2">SALA 2</option>
+                                                    <option value="3">SALA 3</option>
+                                                    <option value="4">SALA 4</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="input-group" id="agendar-hora">
+
+                                            <div class="form-inline" id="linha-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-hora">Hora:</span>
+                                                </div>
+                                                <input type="time" class="form-control" id="hora" required>
+                                            </div>
+        
+                                        </div>
+
+                                        <button class="btn btn-outline-success" id="btnEagendar"><b>ENVIAR</b></button>
+
+                                    </div>
+
+                                    <div class="col-5">
+
+                                        <div class="card" id="resultado-1">
+                                            <div class="card-header">
+                                                Resumo
+                                            </div>
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p id="resultado-agendar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                            
+                            </div>
+
+                            <div class="tab-pane fade" id="reclamante" role="tabpanel" aria-labelledby="list-reclamante-list">
+                                
+                                <div class="row">
+
+                                    <div class="col-5">
+
+                                        <div class="input-group" id="num-reclamante">
+
+                                            <div class="form-inline" id="linha-1rte">                                                
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-num-reclamante">Número de reclamantes:</span>
+                                                </div>
+                                                <select class="custom-select" id="reclamante-inputGroupSelect" required>
+                                                    <option selected>Escolha...</option>
+                                                    <option value="1">1 RECLAMANTE</option>
+                                                    <option value="2">2 RECLAMANTES</option>
+                                                    <option value="3">3 RECLAMANTES</option>
+                                                    <option value="4">4 RECLAMANTES</option>
+                                                    <option value="5">5 RECLAMANTES</option>
+                                                </select>
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-success" onclick="caixaInput(document.getElementById('reclamante-inputGroupSelect').value, 'nome', '#entradaReclamante')" id="btnEnumreclamante"><b>&#62;</b></button>
+                                                </div>                    
+                                            </div>
+
+                                            <span class="input-group" id="entradaReclamante"></span>
+
+                                            <button class="btn btn-outline-success" onclick="resumo(document.getElementById('reclamante-inputGroupSelect').value, 'nome', '#resultado-reclamante')" id="btnEreclamante"><b>ENVIAR</b></button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-5">
+
+                                        <div class="card" id="resultado-2">
+                                            <div class="card-header">
+                                                Resumo
+                                            </div>
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p id="resultado-reclamante">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="reclamado" role="tabpanel" aria-labelledby="list-reclamado-list">
+                                
+                                <div class="row">
+
+                                    <div class="col-5">
+
+                                        <div class="input-group" id="num-reclamado">
+
+                                            <div class="form-inline" id="linha-1rdo">                                                
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-num-reclamdo">Número de reclamados:</span>
+                                                </div>
+                                                <select class="custom-select" id="reclamado-inputGroupSelect" required>
+                                                    <option selected>Escolha...</option>
+                                                    <option value="1">1 RECLAMADO</option>
+                                                    <option value="2">2 RECLAMADOS</option>
+                                                    <option value="3">3 RECLAMADOS</option>
+                                                    <option value="4">4 RECLAMADOS</option>
+                                                    <option value="5">5 RECLAMADOS</option>
+                                                </select>
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-success" onclick="caixaInput(document.getElementById('reclamado-inputGroupSelect').value, 'nomeRmdo', '#entradaReclamado')" id="btnEnumreclamado"><b>&#62;</b></button>
+                                                </div>                    
+                                            </div>
+
+                                            <span class="input-group" id="entradaReclamado"></span>
+
+                                            <button class="btn btn-outline-success" onclick="resumo(document.getElementById('reclamado-inputGroupSelect').value, 'nomeRmdo', '#resultado-reclamado')" id="btnEreclamado"><b>ENVIAR</b></button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-5">
+
+                                        <div class="card" id="resultado-3">
+                                            <div class="card-header">
+                                                Resumo
+                                            </div>
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p id="resultado-reclamado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="tab-pane fade" id="advogado" role="tabpanel" aria-labelledby="list-advogado-list">
+                                
+                                <div class="row">
+
+                                    <div class="col-5">
+
+                                        <div class="input-group" id="num-advogado">
+
+                                            <div class="form-inline" id="linha-1adv">                                                
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-num-advogado">Número de advogados:</span>
+                                                </div>
+                                                <select class="custom-select" id="advogado-inputGroupSelect" required>
+                                                    <option selected>Escolha...</option>
+                                                    <option value="1">1 ADVOGADO</option>
+                                                    <option value="2">2 ADVOGADOS</option>
+                                                    <option value="3">3 ADVOGADOS</option>
+                                                    <option value="4">4 ADVOGADOS</option>
+                                                    <option value="5">5 ADVOGADOS</option>
+                                                </select>
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-success" onclick="caixaInput(document.getElementById('advogado-inputGroupSelect').value, 'nomeAdv', '#entradaAdvogado')" id="btnEnumadvogado"><b>&#62;</b></button>
+                                                </div>                    
+                                            </div>
+
+                                            <span class="input-group" id="entradaAdvogado"></span>
+
+                                            <button class="btn btn-outline-success" onclick="resumo(document.getElementById('advogado-inputGroupSelect').value, 'nomeAdv', '#resultado-advogado')" id="btnEadvogado"><b>ENVIAR</b></button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-5">
+
+                                        <div class="card" id="resultado-4">
+                                            <div class="card-header">
+                                                Resumo
+                                            </div>
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p id="resultado-advogado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="tab-pane fade" id="menor" role="tabpanel" aria-labelledby="list-menor-list">
+                                
+                                <div class="row">
+
+                                    <div class="col-5">
+
+                                        <div class="input-group" id="num-menor">
+
+                                            <div class="form-inline" id="linha-1men">                                                
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="rotulo-num-menor">Número de menores:</span>
+                                                </div>
+                                                <select class="custom-select" id="menor-inputGroupSelect" required>
+                                                    <option selected>Escolha...</option>
+                                                    <option value="1">1 MENOR</option>
+                                                    <option value="2">2 MENORES</option>
+                                                    <option value="3">3 MENORES</option>
+                                                    <option value="4">4 MENORES</option>
+                                                    <option value="5">5 MENORES</option>
+                                                </select>
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-success" onclick="caixaInput(document.getElementById('menor-inputGroupSelect').value, 'nomeMen', '#entradaMenor')" id="btnEnummenor"><b>&#62;</b></button>
+                                                </div>                    
+                                            </div>
+
+                                            <span class="input-group" id="entradaMenor"></span>
+
+                                            <button class="btn btn-outline-success" onclick="resumo(document.getElementById('menor-inputGroupSelect').value, 'nomeMen', '#resultado-menor')" id="btnEmenor"><b>ENVIAR</b></button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-5">
+
+                                        <div class="card" id="resultado-5">
+                                            <div class="card-header">
+                                                Resumo
+                                            </div>
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p id="resultado-menor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

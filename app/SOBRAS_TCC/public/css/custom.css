@@ -1,0 +1,21 @@
+#primeiro_txt{
+    background-color: #e3f2fd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#imagem_circular{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#teste{
+    position: fixed;
+    background-color: black;
+}
+
+#principal{
+    position: relative;
+    top: 70px;
+}

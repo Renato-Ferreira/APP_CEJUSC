@@ -1,0 +1,142 @@
+/*#menu_lateral{
+    background-color: #b1fcb1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 80px;
+    height: 570px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav>a{
+    color: gray;
+}
+.nav-pills>a.nav-link:hover,
+.nav-pills>a.nav-link:focus, 
+.nav-pills>a.nav-link:active{
+    background-color: #000;
+}*/
+
+body{
+    background-color: #e2fee2;
+}
+
+#navbarPrincipal{
+    background-color: #98FB98;
+    position: relative;
+}
+
+#conteudoPrincipal{
+    height: 89vh;
+}
+
+#titulo1{
+    margin-top: 15px;
+    margin-left: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+
+}
+
+#agendar-data{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#agendar-sala{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#agendar-hora{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#btnEagendar{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+#resultado-1{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#num-painel{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#resultado-2{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#btnEpainel{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#num-reclamado{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#resultado-3{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#btnEreclamado{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#num-advogado{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#resultado-4{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#btnEadvogado{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#num-menor{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#resultado-5{
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+#btnEmenor{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#primeiro_txt{
+    background-color: #e3f2fd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#imagem_circular{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*#principal{
+    position: relative;
+    top: 70px;
+}*/
