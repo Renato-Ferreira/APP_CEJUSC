@@ -1,0 +1,989 @@
+-------------------------------------------------------------------------
+Mon May 06 2024 10:39:56 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:13 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:13 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:13 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:13 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:14 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rvhhpdxrnbzhlogz.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:16 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rvhhpdxrnbzhlogz.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:23 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rvhhpdxrnbzhlogz.reclamacao
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:25 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rvhhpdxrnbzhlogz.pauta
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:40 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 10:40:40 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 10:48:27 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 10:58:23 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 11:00:09 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 11:00:34 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 11:03:32 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 11:04:57 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 11:05:35 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 11:07:17 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 11:08:44 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 13:29:42 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:32:50 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:35:42 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:36:15 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:37:12 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:44:11 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 13:47:40 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:49:05 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 13:51:38 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:52:30 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:57:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 13:58:07 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:00:23 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:02:02 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:46 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:54 GMT-0300 (Horário Padrão de Brasília)
+Usuário: 13326574860
+POST
+/valida/api
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:54 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:54 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:54 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:55 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hzvkyntamriojjbc.home
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:57 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hzvkyntamriojjbc.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 14:06:59 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hzvkyntamriojjbc.reclamacao
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:00 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.hzvkyntamriojjbc.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hzvkyntamriojjbc.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:07 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:07 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:33 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:33 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:33 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:33 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:33 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.auzkmkqmykcsnyde.home
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:37 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.auzkmkqmykcsnyde.reclamacao
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:38 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.auzkmkqmykcsnyde.andamento
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:38 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.auzkmkqmykcsnyde.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:51 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:07:52 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:10:38 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:03 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:03 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:03 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:03 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:03 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.bvmzvoebvmvbetoh.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:07 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:11:15 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:13:55 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:14:01 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+-------------------------------------------------------------------------
+Mon May 06 2024 14:14:01 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+POST
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 14:14:01 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 14:14:01 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+/principal/13326574860.jfduriiygmnlwyky.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:14:01 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 14:14:12 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.jfduriiygmnlwyky.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 14:16:56 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.jfduriiygmnlwyky.reclamacao
+-------------------------------------------------------------------------
+Mon May 06 2024 14:16:58 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.jfduriiygmnlwyky.pauta
+/logout/13326574860
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:03 GMT-0300 (Horário Padrão de Brasília)
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:11 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:11 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:11 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:11 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:11 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ucqhxnpfmxwghpxd.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:13 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ucqhxnpfmxwghpxd.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:14 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ucqhxnpfmxwghpxd.andamento
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:21 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/undefined.undefined.pauta
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:27 GMT-0300 (Horário Padrão de Brasília)
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:37 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:37 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:37 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:37 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:17:37 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.jhyogwkinpwryaba.home
+-------------------------------------------------------------------------
+Mon May 06 2024 14:18:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.jhyogwkinpwryaba.pauta
+GET
+/logout/13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 14:18:07 GMT-0300 (Horário Padrão de Brasília)
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 14:18:07 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:23 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+/valida/api
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:29 GMT-0300 (Horário Padrão de Brasília)
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:29 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:29 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:29 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:29 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.txcvtjvktokzzsqh.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:31 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.txcvtjvktokzzsqh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:34 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 14:25:34 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+-------------------------------------------------------------------------
+Mon May 06 2024 15:06:47 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:06:47 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:06:47 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:06:47 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:06:47 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ahdabiwxpojbqezp.home
+-------------------------------------------------------------------------
+Mon May 06 2024 15:06:49 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ahdabiwxpojbqezp.pauta
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:14:56 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 15:14:56 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:15:03 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+-------------------------------------------------------------------------
+Mon May 06 2024 15:15:03 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:15:03 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:15:03 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:15:03 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.zokikegptphjjwvl.home
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:18:44 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:18:44 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:18:44 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:18:44 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:18:44 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.kqogqlaxmpavempx.home
+POST
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:13 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:13 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:13 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:13 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:13 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.nrjmkipyezmyulls.presenca
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:18 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.nrjmkipyezmyulls.reclamacao
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:25 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.nrjmkipyezmyulls.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:27 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.nrjmkipyezmyulls.andamento
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:30 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.nrjmkipyezmyulls.reclamacao
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:31 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.nrjmkipyezmyulls.home
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 15:19:33 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:22 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:22 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:22 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:22 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:22 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.cmrlwrrffhdkzykx.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:25 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.cmrlwrrffhdkzykx.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:26 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.cmrlwrrffhdkzykx.presenca
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:28 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.cmrlwrrffhdkzykx.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:29 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.cmrlwrrffhdkzykx.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:31 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.cmrlwrrffhdkzykx.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:33 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.cmrlwrrffhdkzykx.pauta
+GET
+/principal/13326574860.cmrlwrrffhdkzykx.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:35 GMT-0300 (Horário Padrão de Brasília)
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:38 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:45 GMT-0300 (Horário Padrão de Brasília)
+POST
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:45 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:45 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:45 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+/principal/13326574860.xueqskajktenevrb.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:45 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:49 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.xueqskajktenevrb.pauta
+/logout/13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:52 GMT-0300 (Horário Padrão de Brasília)
+GET
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 15:21:52 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:38 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:45 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:45 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:45 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:45 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:45 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ctwopxtzaccvihlx.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:48 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ctwopxtzaccvihlx.conciliador
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:32:49 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ctwopxtzaccvihlx.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:33:02 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ctwopxtzaccvihlx.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:33:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ctwopxtzaccvihlx.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:33:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ctwopxtzaccvihlx.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:33:05 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ctwopxtzaccvihlx.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:33:24 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ctwopxtzaccvihlx.conciliador
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:22 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:22 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:24 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:29 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:29 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:29 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:29 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:29 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.beqihwmprjeaxdgt.presenca
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:36:33 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.beqihwmprjeaxdgt.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:08 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:18 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:18 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:18 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:18 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:18 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:22 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:24 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:31 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:32 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:36 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.pauta
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:40 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:42 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:50 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:51 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.fqvoytqmlmkgqskl.completas
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:55 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:57 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:49:59 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.fqvoytqmlmkgqskl.presenca
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:50:02 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.fqvoytqmlmkgqskl.conciliador
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:50:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fqvoytqmlmkgqskl.completas
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:50:06 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.fqvoytqmlmkgqskl.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:52:52 GMT-0300 (Horário Padrão de Brasília)
+Usuário 13326574860 DESLOGOU >>>
+GET
+/logout/13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:52:52 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:00 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:00 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:00 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:00 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:00 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:05 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.conciliador
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:06 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rdkzdeuqwlevwkcy.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:07 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:26 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rdkzdeuqwlevwkcy.conciliador
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:27 GMT-0300 (Horário Padrão de Brasília)
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:29 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:31 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:53:49 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rdkzdeuqwlevwkcy.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:16 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:16 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+POST
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:22 GMT-0300 (Horário Padrão de Brasília)
+Usuário: 13326574860
+/valida/api
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:22 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:22 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:22 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+/principal/13326574860.rswqqizydzlrzguh.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:22 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:24 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rswqqizydzlrzguh.conciliador
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:25 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:54:26 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:14 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:16 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:18 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:22 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:24 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:25 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rswqqizydzlrzguh.completas
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:26 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:30 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:32 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:34 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:35 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:37 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:40 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:41 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rswqqizydzlrzguh.completas
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:55:42 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:56:36 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.presenca
+-------------------------------------------------------------------------
+Mon May 06 2024 15:56:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.conciliador
+-------------------------------------------------------------------------
+Mon May 06 2024 15:56:40 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.completas
+-------------------------------------------------------------------------
+Mon May 06 2024 15:56:41 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.rswqqizydzlrzguh.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 15:57:39 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.rswqqizydzlrzguh.conciliador
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 15:57:41 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 15:57:41 GMT-0300 (Horário Padrão de Brasília)
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 16:13:32 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 16:13:33 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon May 06 2024 16:14:52 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:11 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:11 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:11 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:11 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:11 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ggeabeytpiakipxd.presenca
+GET
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:15 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ggeabeytpiakipxd.pauta
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:17 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ggeabeytpiakipxd.completas
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:21 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon May 06 2024 16:15:21 GMT-0300 (Horário Padrão de Brasília)
+GET
+/

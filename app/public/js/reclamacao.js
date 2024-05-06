@@ -1,4 +1,4 @@
-$(document).ready( () => {
+$( () => {
 
     $("#btnEprocesso").click( (event) => {
         formataProcesso($("#numProcesso").val());

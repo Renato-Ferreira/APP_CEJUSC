@@ -1,4 +1,4 @@
-$(document).ready( () => {
+$( () => {
 
     $("#btnEprocesso").click( (event) => {
         $("#titulo1").html("PROCESSO: " + $("#numProcesso").val() + "<small><i> (selecionado)</small></i>");

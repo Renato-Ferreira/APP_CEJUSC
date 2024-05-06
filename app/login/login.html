@@ -7,50 +7,100 @@
         <title>C3 CEJUSC</title>
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
         <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/@popperjs/core/dist/umd/popper.js"></script>
         <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.js"></script>
-        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">  
     </head>
 
-    <body style="background-color: #DCDCDC;">
-        <div class="container-fluid" style="background-color: #40E0D0;">
-            <div class="row">
-                <div class="col-3" style="padding-top: 5px; padding-bottom: 5px;">
-                    <img src="./img/logo_box.png" width="150px" height="150px">
-                </div>
-                <div class="col" style="padding-top: 40px;">
-                    <h1 class="display-4"><strong>CENTRAL DE CONTROLE DO CEJUSC</strong></h1>
-                </div>
+    <body style="background-color: #e2fee2;">
+
+        <header class="navbar navbar-expand-lg" style="background-color: #98FB98;">
+
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="http://192.168.0.104:3000/">
+                <img src="./img/concluir-tarefa.png" width="60" height="60" class="d-inline-block align-center" alt="">
+                CONTROLE RECEPÇÃO CEJUSC
+              </a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" id="">Presença</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="">Conciliador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="">Completas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="">Pauta</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link">&nbsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">&nbsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">&nbsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">&nbsp;</a>
+                  </li>
+
+                  <li class="nav-item dropdown rounded border border-success" id="botaoUser">                    
+                    <a class="nav-link dropdown-toggle" id="userRef" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SEM USUÁRIO
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" data-bs-toggle="modal" href="#staticBackdrop"><b>LOGIN</b></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Sobre o C³</a></li>
+                    </ul>
+                  </li>                 
+                </ul>                
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+
             </div>
-        </div>
+
+        </header>
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4" style="padding-top: 20px;">
-                    <div class="card">
-                        <div class="card-header">
-                            ÁREA DE ACESSO
+            <div class="row border-top border-success">                
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background-color: #98FB98;">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">L O G I N</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">L O G I N</h5>
-
-                            <form action="/valida/api" method="POST">
-                                <div class="form-group">
-                                    <label for="cpfUsuario">Usuário</label>
-                                    <input type="text" class="form-control" id="cpfUsuario" name="cpfUsuario" aria-describedby="userCadastrado" placeholder="CPF do usuário" required>
-                                    <small id="userCadastrado" class="form-text text-muted">Entre com o CPF do usuário cadastrado.</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="senhaUsuario">Senha</label>
-                                    <input type="password" class="form-control" id="senhaUsuario" name="senhaUsuario" placeholder="senha" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary">ENVIAR</button>
-                            </form>
-
+                        <div class="modal-body border-top border-success border-bottom border-success" style="background-color: #e2fee2;">
+                          <form action="/valida/api" method="POST">
+                            <div class="form-group">
+                                <label for="cpfUsuario">Usuário</label>
+                                <input type="text" class="form-control" id="cpfUsuario" name="cpfUsuario" aria-describedby="userCadastrado" placeholder="CPF do usuário" required>
+                                <small id="userCadastrado" class="form-text text-muted">Entre com o CPF do usuário cadastrado.</small>
+                            </div>
+                          <br>
+                            <div class="form-group">
+                                <label for="senhaUsuario">Senha</label>
+                                <input type="password" class="form-control" id="senhaUsuario" name="senhaUsuario" placeholder="senha" required>
+                            </div>
                         </div>
+                        <div class="modal-footer" style="background-color: #98FB98;">
+                          <button type="submit" class="btn btn-outline-success">ENVIAR</button>                          
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-4"></div>
+                  </div>                
             </div>
         </div>
     </body>

@@ -1,5 +1,5 @@
 //Script para manipulação do formulário de LOGIN
-$(document).ready( () => {
+$( () => {
 
     $("#btnE").click( (event) => {
         let end = "/valida/api/" + $("#cpfUsuario").val() + "." + $("#senhaUsuario").val();
@@ -13,7 +13,7 @@ $(document).ready( () => {
         })
        .done(function(response){
             if (response == true) {
-                window.location.assign("http://192.168.0.103:3000/home");
+                window.location.assign("http://192.168.0.104:3000/home");
             }
             else if (response == false) {
                 alert("Usuário ou Senha incorretos !!!");

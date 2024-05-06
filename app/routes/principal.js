@@ -20,14 +20,14 @@ router.route('/:id.:token.:page')
 .get( (req, res) => {      
     if (req.params.token == userLogado.token) {
         switch(req.params.page) {
-            case "home":
-                res.redirect(`./logado/src/home.html?user=${req.params.id}`);
+            case "presenca":
+                res.redirect(`./logado/src/presenca.html?user=${req.params.id}`);
                 break;
-            case "reclamacao":
-                res.redirect(`./logado/src/reclamacao.html?user=${req.params.id}`);
+            case "conciliador":
+                res.redirect(`./logado/src/conciliador.html?user=${req.params.id}`);
                 break;
-            case "andamento":
-                res.redirect(`./logado/src/andamento.html?user=${req.params.id}`);
+            case "completas":
+                res.redirect(`./logado/src/completas.html?user=${req.params.id}`);
                 break;
             case "pauta":
                 res.redirect(`./logado/src/pauta.html?user=${req.params.id}`);
