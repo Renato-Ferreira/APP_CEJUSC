@@ -17,10 +17,10 @@ $( () => {
        .done(function(response){
             user = response;
             $("#userRef").html("OLÁ " + response.nome);
-            $("#1").attr("href", "http://192.168.0.104:3000/principal/" + response.id + "." + response.token + ".presenca");
-            $("#2").attr("href", "http://192.168.0.104:3000/principal/" + response.id + "." + response.token + ".conciliador");
-            $("#3").attr("href", "http://192.168.0.104:3000/principal/" + response.id + "." + response.token + ".completas");
-            $("#4").attr("href", "http://192.168.0.104:3000/principal/" + response.id + "." + response.token + ".pauta");
+            $("#1").attr("href", "http://192.168.0.107:3000/principal/" + response.id + "." + response.token + ".presenca");
+            $("#2").attr("href", "http://192.168.0.107:3000/principal/" + response.id + "." + response.token + ".conciliador");
+            $("#3").attr("href", "http://192.168.0.107:3000/principal/" + response.id + "." + response.token + ".completas");
+            $("#4").attr("href", "http://192.168.0.107:3000/principal/" + response.id + "." + response.token + ".pauta");
        })
        .fail(function(jqXHR, textStatus, response){
             alert(response);
@@ -29,5 +29,5 @@ $( () => {
     //
 
     //link para deslogar
-    $("#logout").attr("href", `http://192.168.0.104:3000/logout/${parametro[1]}`);
+    $("#logout").attr("href", `http://192.168.0.107:3000/logout/${parametro[1]}`);
 });

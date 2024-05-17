@@ -57,7 +57,7 @@ const loginRoute = (app) => {
             function usandoBD(db) {
                 return new Promise( (resolve, reject) => {
                     db.serialize( () => {
-                        let sql = `SELECT userName nome, userCPF cpf, password pswd FROM Usuarios`;
+                        let sql = `SELECT userName nome, userCPF cpf, password pswd FROM usuarios`;
                         db.each(sql, (err, row) => {
                             if (err) {
                                 return reject(console.error(err.message));
@@ -93,10 +93,10 @@ const loginRoute = (app) => {
                 .then(fechandoBD)
                 .then( (resultado) => {
                         if (resultado == true) {
-                            res.send(`<script>window.location.assign("http://192.168.0.104:3000/principal/${req.body.cpfUsuario}.${userLogado.token}.presenca");</script>`);
+                            res.send(`<script>window.location.assign("http://192.168.0.107:3000/principal/${req.body.cpfUsuario}.${userLogado.token}.presenca");</script>`);
                         }
                         else {
-                            res.send('<script>window.location.assign("http://192.168.0.104:3000");alert("Usuário ou Senha inválidos!");</script>');
+                            res.send('<script>window.location.assign("http://192.168.0.107:3000");alert("Usuário ou Senha inválidos!");</script>');
                         }
                     },
                     (error) => {
@@ -112,7 +112,7 @@ const loginRoute = (app) => {
         logger('GET', `${req.originalUrl}`, `Usuário ${req.params.id} DESLOGOU >>>`);
         filePath = join(process.cwd(), '/login', `${req.params.id}.json`);
         fs.writeFileSync(filePath, '{}');
-        res.send('<script>window.location.assign("http://192.168.0.104:3000");</script>');
+        res.send('<script>window.location.assign("http://192.168.0.107:3000");</script>');
     });
 
 }

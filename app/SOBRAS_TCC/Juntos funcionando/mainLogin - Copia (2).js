@@ -12,7 +12,7 @@ $( () => {
        .done(function(response){
             alert(response + " !");
             if (response == true) {
-                window.location.assign("http://192.168.0.104:3000/home");
+                window.location.assign("http://192.168.0.107:3000/home");
             }
             else {
                 alert(response + " !");
