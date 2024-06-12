@@ -1,0 +1,17 @@
+https://github.com/Renato-Ferreira/APP_CEJUSC.git
+
+https://blog.somostera.com/desenvolvimento-web/comandos-git
+
+https://www.alura.com.br/artigos/criando-repositorio-remoto-github?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=687448474447&hsa_src=g&hsa_tgt=dsa-1298415354460&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjw_qexBhCoARIsAFgBleuiDP0L6u2XHDnetzK0xHKHGW3uDvFg4eRdC79_0lR2S_7wazSOKWkaAk1QEALw_wcB
+
+
+
+https://nodejs.reativa.dev/0023-update-npm-dependencies/index
+
+(controle de versões)
+https://semver.org/lang/pt-BR/#:~:text=PATCH%2C%20incremente%20a%3A,quando%20corrigir%20falhas%20mantendo%20compatibilidade.
+
+
+git remote add origin https://github.com/Renato-Ferreira/APP_CEJUSC.git
+git push -u origin master
+git log

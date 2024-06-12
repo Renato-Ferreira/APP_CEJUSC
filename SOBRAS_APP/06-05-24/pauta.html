@@ -13,7 +13,6 @@
         
         <link rel="stylesheet" href="../css/custom.css">  
         <script type="text/javascript" src="../js/main.js"></script>
-        <script type="text/javascript" src="../js/presenca.js"></script>
   
     </head>
 
@@ -31,7 +30,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" id="1">Presença</a>
+                    <a class="nav-link" id="1">Presença</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="2">Conciliador</a>
@@ -39,11 +38,18 @@
                   <li class="nav-item">
                     <a class="nav-link" id="3">Completas</a>
                   </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" id="4">Pauta</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" aria-current="page" id="4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pauta
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Diária</a></li>
+                      <li><a class="dropdown-item" href="#">Por Sala</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Por Data</a></li>
+                    </ul>
                   </li>
-                  
+
                   <li class="nav-item">
                     <a class="nav-link">&nbsp;</a>
                   </li>
@@ -86,39 +92,14 @@
         <div class="container-fluid" id="principal">
 
             <div class="row border-top border-success">
-              <div class="col-12">
-                <div class="alert alert-success" role="alert" id="titulo1">
-                  REGISTRO DE PRESENÇA NO BALCÃO
-                </div>
-              </div>
-              
-              <form class="row g-3">
-                <div class="col-auto">
-                  <select class="form-select" aria-label="Seletor de Presença" id="select_presenca">
-                  <option selected>Selecione para Consulta</option>
-                  <option value="1">Processo</option>
-                  <option value="2">Nome da Parte</option>
-                </select>
-                </div>
-                <div class="col-4">
-                  <input class="form-control" type="text" placeholder="Digite para busca" aria-label="Entrada para registro de presença">
-                  <small id="" class="form-text text-muted"><i>Ex.: 0000123-45.2024</i></small>
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-outline-success mb-3">Confirma</button>
-                </div>
-              </form>
 
-              <!--<div class="col-2 border-end border-success" id="">
-                <div class=" pt-5 list-group" id="menuPresenca">                    
-                  <a href="#" class="list-group-item list-group-item-action list-group-item-success">Por Nome</a>
-                  <a href="#" class="list-group-item list-group-item-action list-group-item-success">Por Processo</a>                      
-                </div>                                   
-              </div>
+                <div class="col-2 border-end border-success" id="">
+                    <p>RENATO</p>
+                </div>
 
-              <div class="col-10 overflow-auto" id="conteudoPrincipal">    
+                <div class="col-10 overflow-auto" id="conteudoPrincipal">    
     
-              </div>-->
+                </div>
 
             </div>
                     
