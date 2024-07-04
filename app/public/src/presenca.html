@@ -94,20 +94,25 @@
               
               <form class="row g-3">
                 <div class="col-auto">
-                  <select class="form-select" aria-label="Seletor de Presença" id="select_presenca">
+                  <select class="form-select" aria-label="campoBuscaPresenca" id="campoBuscaPresenca">
                   <option selected>Selecione para Consulta</option>
                   <option value="1">Processo</option>
                   <option value="2">Nome da Parte</option>
                 </select>
                 </div>
                 <div class="col-4">
-                  <input class="form-control" type="text" placeholder="Digite para busca" aria-label="Entrada para registro de presença">
-                  <small id="" class="form-text text-muted"><i>Ex.: 0000123-45.2024</i></small>
+                  <input class="form-control" type="text" placeholder="Digite para busca" aria-label="dadosBuscaPresenca" id="dadosBuscaPresenca" name="dadosBuscaPresenca">
+                  <small id="orientacaoBusca" class="form-text text-muted"><i></i></small>
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-outline-success mb-3">Confirma</button>
+                  <button type="button" class="btn btn-outline-success mb-3" id="btnConfirmaPresenca">Pesquisa</button>
                 </div>
               </form>
+
+              
+              <div class="row" id="resultado">               
+
+              </div>
 
               <!--<div class="col-2 border-end border-success" id="">
                 <div class=" pt-5 list-group" id="menuPresenca">                    

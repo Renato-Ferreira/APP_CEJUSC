@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------
+Mon Jul 01 2024 14:24:03 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:25 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:25 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:25 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:25 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:25 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hqnglkpytymxcypa.presenca
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:42 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hqnglkpytymxcypa.conciliador
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:44 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hqnglkpytymxcypa.presenca
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:45 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.hqnglkpytymxcypa.completas
+GET
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:22:48 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hqnglkpytymxcypa.presenca
+GET
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:23:23 GMT-0300 (Horário Padrão de Brasília)
+Usuário 13326574860 DESLOGOU >>>
+/logout/13326574860
+-------------------------------------------------------------------------
+Mon Jul 01 2024 16:23:23 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
