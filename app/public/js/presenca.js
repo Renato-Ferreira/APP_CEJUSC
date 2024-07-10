@@ -1,4 +1,6 @@
 $( () => {
+    var selectedValue = "";
+
     
     $('#campoBuscaPresenca').on("change", function() {
 
@@ -29,15 +31,15 @@ $( () => {
                 $("#resultado").html("");
             }, 2500);
         } else if(selectedValue === "1") {
-            formataProcesso($("#dadosBuscaPresenca").val());
-            $("#dadosBuscaPresenca").val(processoFormat);
-        }
+            let formattedProcess = formataProcesso($("#dadosBuscaPresenca").val());
+            $("#dadosBuscaPresenca").val(formattedProcess);
+            filipetaVirtual1();
+        };
     });
     
 });
 
-var selectedValue = "";
-var processoFormat = "";
+
 function formataProcesso(processo){
     processo = processo.replace(/[^\d]/g, "");//retira os caracteres indesejados
     //ajusta o tamanho
@@ -51,5 +53,5 @@ function formataProcesso(processo){
         let i = processo.length - 13;
         processo = processo.slice(i);
     };
-    processoFormat = processo.replace(/(\d{7})(\d{2})(\d{4})/, "$1-$2.$3");       
+    return processo.replace(/(\d{7})(\d{2})(\d{4})/, "$1-$2.$3");       
 };

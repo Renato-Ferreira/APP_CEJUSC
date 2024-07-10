@@ -23,4 +23,4 @@ app.get('/', (req, res) => res.redirect('./src/home.html')); //Página inicial d
 
 
 //ESCUTANDO !!!
-app.listen(port, () => console.log(`Neste momento o APP esta escutando em http://192.168.0.107:${port}`));
+app.listen(port, () => console.log(`Neste momento o APP esta escutando em http://192.168.0.101:${port}`));

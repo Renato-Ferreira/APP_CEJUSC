@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const enderecoIP = '192.168.0.107';
+const enderecoIP = '192.168.0.101';
 
 app.listen(port, enderecoIP, () => console.log(`Neste momento o APP esta escutando em http://${enderecoIP}:${port}`));
 //
@@ -30,6 +30,14 @@ app.use('/', login);
 var routerPrincipal = require('./routes/principal');
 app.use('/principal', routerPrincipal);
 //
+
+//middleware para presença
+var presenca = (req, res, next) => {
+    const routerPresenca = require('./routes/rotapresenca');
+    routerPresenca(app);
+    next();
+}
+app.use('/presenca', presenca);
 
 //middleware para reclamação
 var reclamacao = (req, res, next) => {
