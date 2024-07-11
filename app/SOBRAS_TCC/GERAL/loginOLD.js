@@ -10,7 +10,7 @@ const loginRoute = (app) => {
         console.log('(POST on "/") Time: ', Date.now(), 'Usuário: ', req.body.cpfUsuario);
         let valida = require('../db/validaLogin');
         valida(req.body.cpfUsuario, req.body.senhaUsuario);
-        res.send('<script>window.location.assign("http://192.168.0.101:3000/home");</script>');
+        res.send('<script>window.location.assign("http://192.168.0.102:3000/home");</script>');
         })
 }
 
@@ -19,7 +19,7 @@ module.exports = loginRoute;
 
 
         //res.json(req.body);
-        //res.redirect('http://192.168.0.101:3000/home');
+        //res.redirect('http://192.168.0.102:3000/home');
 
         /*.post( (req, res, next) => {
             console.log('(POST on "/") Time: ', Date.now(), 'Usuário: ', req.body.cpfUsuario);
@@ -29,7 +29,7 @@ module.exports = loginRoute;
             console.log(resp);
             next();
             }, (req, res) => {
-                    res.send('<script>window.location.assign("http://192.168.0.101:3000/home");</script>');
+                    res.send('<script>window.location.assign("http://192.168.0.102:3000/home");</script>');
             })*/
 
             /*var resp = new Promise( (resolve, reject) => {
@@ -42,8 +42,8 @@ module.exports = loginRoute;
             resp.then( data => res.send(data) );
             resp.catch( data => res.send(data) );*/
 
-        //res.redirect('http://192.168.0.101:3000/home');
-        //res.send('<script>window.location.assign("http://192.168.0.101:3000/home");</script>');
+        //res.redirect('http://192.168.0.102:3000/home');
+        //res.send('<script>window.location.assign("http://192.168.0.102:3000/home");</script>');
     
     
 

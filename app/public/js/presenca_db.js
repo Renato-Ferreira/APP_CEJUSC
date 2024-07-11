@@ -9,19 +9,19 @@ function filipetaVirtual1(){
             processo: $("#dadosBuscaPresenca").val()            
         },
     })
-   .done(function(response){
-       if (response == true){
-           $("#resultado").html('<div class="alert alert-success" role="alert"><small>Dados <b>GRAVADOS</b> com sucesso.</small></div>');
-       }
-       else{
-           //let link = "http://192.168.0.101:3000/principal/" + user.id + "." + user.token + ".andamento";
-           $("#resultado").html(`<div class="alert alert-warning" role="alert"><small>Processo já existe. Selecione </small><a href=${link} class="alert-link">ANDAMENTO</a><small> para modificar os dados.</small></div>`);
-       }
-   })
+    .done(function(response){
+        if (response.sucesso){
+            if(response.tema != null) {
+                $("#resultado").html(`<div class="alert alert-success" role="alert"><small>Dados <b>ENCONTRADOS</b> com sucesso. Tema: ${response.tema}</small></div>`);
+            } else {
+                $("#resultado").html(`<div class="alert alert-danger" role="alert"><small>Dados <b>NÃO ENCONTRADOS</b>. Tema: ${response.tema}</small></div>`);
+            }
+        }
+    })
    .fail(function(jqXHR, textStatus, response){
         alert(response);
    });
-};
+}
 
 
-//fechado 24/06/2020
+//fechado parcialmente 11/07/2024

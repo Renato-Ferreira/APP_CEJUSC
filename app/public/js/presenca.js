@@ -34,7 +34,14 @@ $( () => {
             let formattedProcess = formataProcesso($("#dadosBuscaPresenca").val());
             $("#dadosBuscaPresenca").val(formattedProcess);
             filipetaVirtual1();
-        };
+        }
+    });
+
+    // Previne o envio do formulário ao pressionar a tecla Enter
+    $('#formBuscaPresenca').on('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+        }
     });
     
 });
@@ -47,11 +54,11 @@ function formataProcesso(processo){
         let lim = 13 - processo.length;
         for (let i=1; i<=lim; i++){
             processo = "0" + processo;
-        };
-    };
+        }
+    }
     if (processo.length > 13){
         let i = processo.length - 13;
         processo = processo.slice(i);
-    };
+    }
     return processo.replace(/(\d{7})(\d{2})(\d{4})/, "$1-$2.$3");       
-};
+}

@@ -23,7 +23,7 @@ const presencaRotas = (app) =>{
             else{
                 next();
             }
-        };
+        }
         await confirmaUser();
     })
     .post( async (req, res) => {
@@ -38,28 +38,30 @@ const presencaRotas = (app) =>{
                                 WHERE processos.processo_id = ?`;
                     // first row only
                     db.get(sql, [processo], (err, row) => {
-                        if (err) {
+                        if(err) {
                             return reject(console.error(err.message));
-                        }
-                        logger(`A row has been inserted with rowid ${this.lastID}`);
-                        msg = true;
-                        fechandoBD.setMsg = msg;
-                        console.log(row.tema);
-                        return resolve(db);                
-                    });                    
+                        } else if(row) {
+                            logger(`Uma linha foi encontrada. Processo: ${processo}`);                                                  
+                            return resolve({ db, tema: row.tema });
+                        } else {
+                            logger(`Uma linha NÃO foi encontrada. Processo: ${processo}`);
+                            return resolve({ db, tema: null });
+                        }                                       
+                    })                  
                 });
-            };
+            }
 
             iniciandoBD()
-                .then(usandoBD)
-                .then(fechandoBD)
+                .then(usandoBD)                
                 .then( (resultado) => {
-                        res.send(resultado);
+                    fechandoBD(resultado.db);                    
+                    res.send({ sucesso: true, tema: resultado.tema });
                     },
                     (error) => {
                         console.log(`DEU ZICA !!!! [ ${error} ]`);
+                        res.send({ sucesso: false, erro: error.message });
                     }
-                );
+                );               
 
         }
     });
@@ -67,31 +69,4 @@ const presencaRotas = (app) =>{
     
 }
 module.exports = presencaRotas;
-/*fechado 24/06/2020
-
-
-
-
-const logger = require('./log/log');
-const iniciandoBD = require('../db/openDB');
-const fechandoBD = require('../db/closeDB');
-
-
-function filipetaVirtual(processo){
-    iniciandoBD(); // open the database
-    let sql = `SELECT processos.assunto tema
-                FROM procesos
-                WHERE processos.processo_id = ?`;
-    // first row only
-    db.get(sql, [processo], (err, row) => {
-    if (err) {
-      return console.error(err.message);
-    }
-    return row
-      ? console.log(row.tema)
-      : console.log(`No assunto found with the id ${processo}`);
-  
-    });
-    fechandoBD(); // close the database connection
-};
-module.exports = filipetaVirtual;*/
+//fechado parcialmente 11/07/2024
