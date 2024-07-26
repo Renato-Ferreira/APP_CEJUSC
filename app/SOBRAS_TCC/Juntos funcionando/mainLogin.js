@@ -13,7 +13,7 @@ $( () => {
         })
        .done(function(response){
             if (response == true) {
-                window.location.assign("http://192.168.0.102:3000/home");
+                window.location.assign("http://192.168.0.107:3000/home");
             }
             else if (response == false) {
                 alert("Usuário ou Senha incorretos !!!");

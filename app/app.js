@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const enderecoIP = '192.168.0.102';
+const enderecoIP = '192.168.0.107';
 
 app.listen(port, enderecoIP, () => console.log(`Neste momento o APP esta escutando em http://${enderecoIP}:${port}`));
 //

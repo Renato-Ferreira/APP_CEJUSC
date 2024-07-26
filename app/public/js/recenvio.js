@@ -20,7 +20,7 @@ function cadastraProcesso(){
            $("#rA").html('<div class="alert alert-success" role="alert"><small>Dados <b>GRAVADOS</b> com sucesso.</small></div>');
        }
        else{
-           let link = "http://192.168.0.102:3000/principal/" + user.id + "." + user.token + ".andamento";
+           let link = "http://192.168.0.107:3000/principal/" + user.id + "." + user.token + ".andamento";
            $("#rA").html(`<div class="alert alert-warning" role="alert"><small>Processo já existe. Selecione </small><a href=${link} class="alert-link">ANDAMENTO</a><small> para modificar os dados.</small></div>`);
        }
    })
@@ -55,7 +55,7 @@ function cadastraParte(num){
            $("#r").html('<div class="alert alert-success" role="alert"><small>Dados <b>GRAVADOS</b> com sucesso.</small></div>');
        }
        else{
-           let link = "http://192.168.0.102:3000/principal/" + user.id + "." + user.token + ".andamento";
+           let link = "http://192.168.0.107:3000/principal/" + user.id + "." + user.token + ".andamento";
            $("#r").html(`<div class="alert alert-warning" role="alert"><small>PROCESSO não cadastrado. Dados não foram gravados</small></div>`);
        }
    })

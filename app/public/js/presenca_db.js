@@ -9,13 +9,11 @@ function filipetaVirtual1(){
             processo: $("#dadosBuscaPresenca").val()            
         },
     })
-    .done(function(response){
+    .done(function(response){        
         if (response.sucesso){
-            if(response.tema != null) {
-                $("#resultado").html(`<div class="alert alert-success" role="alert"><small>Dados <b>ENCONTRADOS</b> com sucesso. Tema: ${response.tema}</small></div>`);
-            } else {
-                $("#resultado").html(`<div class="alert alert-danger" role="alert"><small>Dados <b>NÃO ENCONTRADOS</b>. Tema: ${response.tema}</small></div>`);
-            }
+            $("#resultado").html(`<div class="alert alert-success" role="alert"><small>Dados <b>ENCONTRADOS</b> com sucesso. Tema: ${response.filipeta.assunto}</small></div>`);
+        } else {
+            $("#resultado").html(`<div class="alert alert-danger" role="alert"><small>Dados <b>NÃO ENCONTRADOS</b>. Tema: ${response.sucesso}</small></div>`);
         }
     })
    .fail(function(jqXHR, textStatus, response){
@@ -24,4 +22,4 @@ function filipetaVirtual1(){
 }
 
 
-//fechado parcialmente 11/07/2024
+//fechado parcialmente 26/07/2024

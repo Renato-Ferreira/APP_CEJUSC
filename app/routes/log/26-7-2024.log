@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:33 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:33 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:33 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:33 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:33 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.xorrfmumhvkpialp.presenca
+POST
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:42 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:42 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:42 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1008516-16.2022
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Fri Jul 26 2024 15:49:42 GMT-0300 (Horário Padrão de Brasília)
+POST
+-------------------------------------------------------------------------
+Fri Jul 26 2024 16:02:42 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+-------------------------------------------------------------------------
+Fri Jul 26 2024 16:02:42 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Fri Jul 26 2024 16:02:42 GMT-0300 (Horário Padrão de Brasília)
+Uma linha NÃO foi encontrada. Processo: 0010025-78.2024
+-------------------------------------------------------------------------
+Fri Jul 26 2024 16:02:42 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Fri Jul 26 2024 16:04:08 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Fri Jul 26 2024 16:04:08 GMT-0300 (Horário Padrão de Brasília)
+GET
+/

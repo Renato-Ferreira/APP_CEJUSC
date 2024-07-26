@@ -27,46 +27,130 @@ const presencaRotas = (app) =>{
         await confirmaUser();
     })
     .post( async (req, res) => {
-        await consultar1(req.body.processo);
+        filipeta = {
+					processo: req.body.processo,
+					assunto: "",
+					data: "",
+					hora: "",
+					sala: "",
+					situacao: "",
+					requerente: [],
+					adv_requerente: [],
+					requerido: [],
+					adv_requerido: [],
+					preenchida: ""
+				}
+		await consultar1(filipeta);
+		
+        async function consultar1(filipeta) {
 
-        async function consultar1(processo) {
-
-            function usandoBD(db) {
-                return new Promise( (resolve, reject) => {
-                    let sql = `SELECT processos.assunto tema
-                                FROM processos
-                                WHERE processos.processo_id = ?`;
-                    // first row only
-                    db.get(sql, [processo], (err, row) => {
-                        if(err) {
+            async function usandoBD(db) {
+					
+                let consultaTipo1 = new Promise( (resolve, reject) => {
+                    let sql = `SELECT a.processo_id
+                                FROM processos a
+                                WHERE a.processo_id = ?`;
+                    //verifica se existe o processo já cadastrado// first row only
+                    db.get(sql, [filipeta.processo], (err, row) => {
+                        if (err) {
                             return reject(console.error(err.message));
-                        } else if(row) {
-                            logger(`Uma linha foi encontrada. Processo: ${processo}`);                                                  
-                            return resolve({ db, tema: row.tema });
-                        } else {
-                            logger(`Uma linha NÃO foi encontrada. Processo: ${processo}`);
-                            return resolve({ db, tema: null });
-                        }                                       
-                    })                  
-                });
+                        } 
+                        else if (!row){
+                            logger(`Uma linha NÃO foi encontrada. Processo: ${filipeta.processo}`);
+                            filipeta.preenchida = false;
+                            return resolve({ db, filipeta });
+                        }
+                        else{
+                            db.serialize( () => {
+                                let sql = `SELECT a.assunto AS assunto, b.data AS data, b.horario AS horario, b.sala AS sala, b.situacao AS situacao
+                                            FROM processos a, geral_processos b
+                                            WHERE a.processo_id = ? AND a.processo_id = b.processo_id`;
+                            
+                                let sql2 = `SELECT DISTINCT a.requerente AS requerente
+                                            FROM requerentes a
+                                            WHERE a.processo_id = ?`;
+
+                                let sql3 = `SELECT DISTINCT a.advogado AS advogado_rqrnt
+                                            FROM requerente_advs a
+                                            WHERE a.processo_id = ?`;
+
+                                let sql4 = `SELECT DISTINCT a.requerido AS requerido
+                                            FROM requeridos a
+                                            WHERE a.processo_id = ?`;
+
+                                let sql5 = `SELECT DISTINCT a.advogado AS advogado_rqrd
+                                            FROM requerido_advs a
+                                            WHERE a.processo_id = ?`;
+
+                                db.each(sql2, [filipeta.processo], (err, row) => {
+                                    if(err) {
+                                        return reject(console.error(err.message));
+                                    }
+                                    else {                                            
+                                        filipeta.requerente.push(row.requerente);
+                                    }
+                                });
+                                db.each(sql3, [filipeta.processo], (err, row) => {
+                                    if(err) {
+                                        return reject(console.error(err.message));
+                                    }
+                                    else {                                            
+                                        filipeta.adv_requerente.push(row.advogado_rqrnt);
+                                    }
+                                });
+                                db.each(sql4, [filipeta.processo], (err, row) => {
+                                    if(err) {
+                                        return reject(console.error(err.message));
+                                    }
+                                    else {                                            
+                                        filipeta.requerido.push(row.requerido);
+                                    }
+                                });
+                                db.each(sql5, [filipeta.processo], (err, row) => {
+                                    if(err) {
+                                        return reject(console.error(err.message));
+                                    }
+                                    else {                                            
+                                        filipeta.adv_requerido.push(row.advogado_rqrd);
+                                    }                                        
+                                });
+                                db.get(sql, [filipeta.processo], (err, row) => {
+                                    if(err) {
+                                        return reject(console.error(err.message));
+                                    }
+                                    else {                                            
+                                        filipeta.assunto = row.assunto;
+                                        filipeta.data = row.data;
+                                        filipeta.horario = row.horario;
+                                        filipeta.sala = row.sala;
+                                        filipeta.situacao = row.situacao;
+                                        logger(`Uma linha FOI encontrada. Processo: ${filipeta.processo}`);
+                                        filipeta.preenchida = true;                                            
+                                        return resolve({ db, filipeta });
+                                    }
+                                });
+                            
+                            });                         
+                        }
+                    });
+                });            
+                return consultaTipo1;                    
             }
 
             iniciandoBD()
-                .then(usandoBD)                
-                .then( (resultado) => {
-                    fechandoBD(resultado.db);                    
-                    res.send({ sucesso: true, tema: resultado.tema });
-                    },
-                    (error) => {
-                        console.log(`DEU ZICA !!!! [ ${error} ]`);
-                        res.send({ sucesso: false, erro: error.message });
-                    }
-                );               
-
+            .then(usandoBD)                
+            .then( (resultado) => {
+                //console.log("Filipeta resultado:", resultado.filipeta); // Adicione este log
+                fechandoBD(resultado.db);                    
+                res.send({ sucesso: true, filipeta: resultado.filipeta });
+                },
+                (error) => {
+                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    res.send({ sucesso: false, erro: error.message });
+                }
+            );             
         }
-    });
-
-    
+    });    
 }
 module.exports = presencaRotas;
-//fechado parcialmente 11/07/2024
+//fechado parcialmente 26/07/2024
