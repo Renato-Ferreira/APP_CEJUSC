@@ -1,0 +1,202 @@
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:05 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+POST
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:05 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:05 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:05 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:05 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.lredyaouweoxmsvx.presenca
+GET
+POST
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:13 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:13 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:13 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0004315-95.2022
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:32:13 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+/logout/13326574860
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:33 GMT-0300 (Horário Padrão de Brasília)
+Usuário 13326574860 DESLOGOU >>>
+GET
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:33 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:59 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:59 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:59 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:59 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+/principal/13326574860.silwxhhkudzxxrrv.presenca
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:47:59 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:48:03 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:48:03 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:48:03 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0004315-95.2022
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:48:03 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:19 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:19 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:40 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:40 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:40 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:40 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:41 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ivtkyflcijmlixdh.presenca
+GET
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:45 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:45 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:45 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0004315-95.2022
+-------------------------------------------------------------------------
+Wed Jul 31 2024 10:52:45 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:26 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ivtkyflcijmlixdh.conciliador
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:27 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ivtkyflcijmlixdh.presenca
+/presenca/processo
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:40 GMT-0300 (Horário Padrão de Brasília)
+POST
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:40 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:40 GMT-0300 (Horário Padrão de Brasília)
+Uma linha NÃO foi encontrada. Processo: 0010025-78.2024
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:40 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:49 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+POST
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:49 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:50 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0004315-95.2022
+-------------------------------------------------------------------------
+Wed Jul 31 2024 11:15:50 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 12:25:09 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ivtkyflcijmlixdh.conciliador
+-------------------------------------------------------------------------
+Wed Jul 31 2024 12:25:09 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ivtkyflcijmlixdh.presenca
+GET
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:09:46 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:09:46 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:51 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:51 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:51 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:51 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:51 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.txegagtitcuegpet.presenca
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:57 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:57 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:57 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0004315-95.2022
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:11:57 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:13:46 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Wed Jul 31 2024 13:13:46 GMT-0300 (Horário Padrão de Brasília)
+/
+GET

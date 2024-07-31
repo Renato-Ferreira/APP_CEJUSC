@@ -26,6 +26,10 @@ body{
     position: relative;
 }
 
+#formBuscaPresenca{
+    margin-left: 5px;
+}
+
 #titulo1{
     margin-top: 15px;
     margin-left: 5px;
@@ -33,6 +37,13 @@ body{
     font-size: 22px;
     font-weight: normal;
 }
+#resultado{
+    margin-left: 5px;
+}
+
+#filipetaSpan span {
+    margin-right: 20px;
+  }
 
 #conteudoPrincipal{
     height: 86vh;

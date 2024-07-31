@@ -31,7 +31,7 @@ const presencaRotas = (app) =>{
 					processo: req.body.processo,
 					assunto: "",
 					data: "",
-					hora: "",
+					horario: "",
 					sala: "",
 					situacao: "",
 					requerente: [],

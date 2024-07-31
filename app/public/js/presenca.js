@@ -21,19 +21,15 @@ $( () => {
 
     $("#btnConfirmaPresenca").on("click", function() {
         if(selectedValue === "Selecione para Consulta") {
-            $("#resultado").html(`<div class="col-auto">
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>A T E N Ç Ã O  !</strong> Você deve selecionar uma opção para pesquisa.
-                                    </div>
-                                  </div>
-                                `);
-            setTimeout(function() {
-                $("#resultado").html("");
-            }, 2500);
-        } else if(selectedValue === "1") {
+            $("#resultado").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
+                                    <strong>A T E N Ç Ã O  !</strong> Você deve selecionar uma opção para pesquisa.
+                                  </div>`);
+            setTimeout(function() {$("#resultado").html("");}, 3000);
+        }
+        else if(selectedValue === "1") {
             let formattedProcess = formataProcesso($("#dadosBuscaPresenca").val());
             $("#dadosBuscaPresenca").val(formattedProcess);
-            filipetaVirtual1();
+            filipetaVirtual1(formattedProcess);
         }
     });
 
