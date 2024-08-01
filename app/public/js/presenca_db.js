@@ -14,7 +14,9 @@ function filipetaVirtual1(numProcesso){
             // Inicialize a string de saída com o conteúdo HTML fixo
             let output = `
                 <div class="card border-success mb-3">
-                    <div class="card-header"><b>FILIPETA</b></div>
+                    <div class="card-header"><b>FILIPETA</b>
+                        <button type="button" class="btn-close position-absolute end-0" id= "closeFilipeta" aria-label="closeFilipeta"></button>
+                    </div>
                     <div class="card-body text-success">
                         <p class="card-text" id="filipetaSpan">
                             <span><b>PROCESSO:</b> ${response.filipeta.processo}</span>
@@ -23,7 +25,7 @@ function filipetaVirtual1(numProcesso){
                             <span><b>HORÁRIO:</b> ${response.filipeta.horario}</span>
                             <span><b>SALA:</b> ${response.filipeta.sala}</span>
                         </p>
-                        <p class="card-text"><b>REQUERENTE: </b>`;                        
+                        <p class="card-text"><a href="#" class="custom-link" onclick="minhaFuncao()"><b>REQUERENTE: </b></a>`; 
             for (let i = 0; i < response.filipeta.requerente.length; i++) {
                 output += `${response.filipeta.requerente[i]}; `;
             }
@@ -52,6 +54,11 @@ function filipetaVirtual1(numProcesso){
             
             // Atualize o conteúdo do elemento com id "resultado"
             $("#resultado").html(output);
+            $("#closeFilipeta").on("click", function() {$("#resultado").html("");});
+            /*$('.custom-link').on('click', function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+                $('#exampleModal').modal('show');
+            }); */        
         } 
         else {
             $("#resultado").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
@@ -65,5 +72,31 @@ function filipetaVirtual1(numProcesso){
    });
 }
 
+function filipetaVirtual2(name){
+        
+    $.ajax({
+        url : "/presenca/nome",
+        method: "POST",
+        data: {
+            tokenBD: user.tokenDB,
+            cpfUsuario: user.id,
+            nome: name
+        },
+    })
+    .done(function(response){        
+        if (response.sucesso && response.processo){
+            filipetaVirtual1(response.processo);
+        } 
+        else {
+            $("#resultado").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
+                                    <strong>DADOS NÃO ENCONTRADOS.</strong> <small>Selecione outra opção para pesquisa.</small>
+                                  </div>`);
+            setTimeout(function() {$("#resultado").html("");}, 3000);
+        }
+    })
+   .fail(function(jqXHR, textStatus, response){
+        alert(response);
+   });
+}
 
-//fechado parcialmente 26/07/2024
+//fechado parcialmente 31/07/2024

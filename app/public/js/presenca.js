@@ -31,6 +31,10 @@ $( () => {
             $("#dadosBuscaPresenca").val(formattedProcess);
             filipetaVirtual1(formattedProcess);
         }
+        else {
+            let nome = `%` + $("#dadosBuscaPresenca").val() + `%`;
+            filipetaVirtual2(nome);
+        }
     });
 
     // Previne o envio do formulário ao pressionar a tecla Enter
@@ -41,6 +45,12 @@ $( () => {
     });
     
 });
+
+function minhaFuncao() {
+    // Usa jQuery para acionar o modal
+    $('#exampleModal').modal('show');
+}
+
 
 
 function formataProcesso(processo){

@@ -45,6 +45,20 @@ body{
     margin-right: 20px;
   }
 
+.custom-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai , ou define a cor do link*/ 
+}
+
+.custom-link:hover {
+    color: red; /* Altera a cor ao passar o mouse */
+}
+
+.custom-check-mark {
+    color: red; /* Altere para a cor desejada */
+    font-size: 30px;
+}
+
 #conteudoPrincipal{
     height: 86vh;
 }
