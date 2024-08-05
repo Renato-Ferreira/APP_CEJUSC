@@ -35,9 +35,13 @@ const presencaRotas = (app) =>{
 					sala: "",
 					situacao: "",
 					requerente: [],
+                    check_rqrnt: [],
 					adv_requerente: [],
+                    check_adv_rqrnt: [],
 					requerido: [],
+                    check_rqrd: [],
 					adv_requerido: [],
+                    check_adv_rqrd: [],
 					preenchida: ""
 				}
 		await consultar1(filipeta);
@@ -66,9 +70,10 @@ const presencaRotas = (app) =>{
                                             FROM processos a, geral_processos b
                                             WHERE a.processo_id = ? AND a.processo_id = b.processo_id`;
                             
-                                let sql2 = `SELECT DISTINCT a.requerente AS requerente
+                                let sql2 = `SELECT DISTINCT a.requerente AS requerente, a.presenca AS check_rqrnt
                                             FROM requerentes a
-                                            WHERE a.processo_id = ?`;
+                                            WHERE a.processo_id = ? AND
+                                            a.data >= '01/01/2024'`;
 
                                 let sql3 = `SELECT DISTINCT a.advogado AS advogado_rqrnt
                                             FROM requerente_advs a
@@ -88,6 +93,7 @@ const presencaRotas = (app) =>{
                                     }
                                     else {                                            
                                         filipeta.requerente.push(row.requerente);
+                                        filipeta.check_rqrnt.push(row.check_rqrnt);
                                     }
                                 });
                                 db.each(sql3, [filipeta.processo], (err, row) => {

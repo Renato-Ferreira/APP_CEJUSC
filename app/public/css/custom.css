@@ -59,6 +59,29 @@ body{
     font-size: 30px;
 }
 
+.btn-close.custom {
+    background-color: red; /* Cor de fundo */
+    border: 2px solid black; /* Personalização da borda */
+    border-radius: 50%; /* Tornar o botão circular */
+    position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .btn-close.custom::before {
+    content: "\2715"; /* Unicode para o 'X' */
+    color: white; /* Cor do 'X' */
+    font-size: 1rem; /* Tamanho do 'X' */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn-close.custom:hover {
+    background-color: darkred; /* Cor de fundo ao passar o mouse */
+  }
+
 #conteudoPrincipal{
     height: 86vh;
 }

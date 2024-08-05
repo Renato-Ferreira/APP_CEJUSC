@@ -46,11 +46,6 @@ $( () => {
     
 });
 
-function minhaFuncao() {
-    // Usa jQuery para acionar o modal
-    $('#exampleModal').modal('show');
-}
-
 
 
 function formataProcesso(processo){
