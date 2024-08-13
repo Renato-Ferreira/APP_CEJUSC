@@ -43,9 +43,20 @@ $( () => {
             event.preventDefault();
         }
     });
+
+    $("#btnRegistraPresenca").on("click",function() {
+        let codUpdate = [];
+        for (let i = 0; i < (parseInt($(`input[name="inlineRadioOptions0"`).val().slice(0,1))); i++) {
+            if ($(`input[name="inlineRadioOptions${i}"]:checked`).val()) {
+                codUpdate.push($(`input[name="inlineRadioOptions${i}"]:checked`).val());
+            }            
+        }
+        $('#papeletaModal').modal('hide');
+        console.log("codUpdate: ", codUpdate); //PARA VERIFICAR OS ERROS
+        atualizaPresenca({processo: $("#dadosBuscaPresenca").val(), codUpdate});
+    });
     
 });
-
 
 
 function formataProcesso(processo){

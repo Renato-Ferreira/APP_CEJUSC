@@ -75,17 +75,20 @@ const presencaRotas = (app) =>{
                                             WHERE a.processo_id = ? AND
                                             a.data >= '01/01/2024'`;
 
-                                let sql3 = `SELECT DISTINCT a.advogado AS advogado_rqrnt
+                                let sql3 = `SELECT DISTINCT a.advogado AS advogado_rqrnt, a.presenca AS check_adv_rqrn
                                             FROM requerente_advs a
-                                            WHERE a.processo_id = ?`;
+                                            WHERE a.processo_id = ? AND
+                                            a.data >= '01/01/2024'`;
 
-                                let sql4 = `SELECT DISTINCT a.requerido AS requerido
+                                let sql4 = `SELECT DISTINCT a.requerido AS requerido, a.presenca AS check_rqrd
                                             FROM requeridos a
-                                            WHERE a.processo_id = ?`;
+                                            WHERE a.processo_id = ? AND
+                                            a.data >= '01/01/2024'`;
 
-                                let sql5 = `SELECT DISTINCT a.advogado AS advogado_rqrd
+                                let sql5 = `SELECT DISTINCT a.advogado AS advogado_rqrd, a.presenca AS check_adv_rqrd
                                             FROM requerido_advs a
-                                            WHERE a.processo_id = ?`;
+                                            WHERE a.processo_id = ? AND
+                                            a.data >= '01/01/2024'`;
 
                                 db.each(sql2, [filipeta.processo], (err, row) => {
                                     if(err) {
@@ -223,6 +226,67 @@ const presencaRotas = (app) =>{
             .then( (resultado) => {
                 fechandoBD(resultado.db);                    
                 res.send({ sucesso: true, processo: resultado.nProcesso });
+                },
+                (error) => {
+                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    res.send({ sucesso: false, erro: error.message });
+                }
+            );             
+        }
+    });
+
+    app.route('/presenca/check')
+    .all( async (req, res, next) => {
+        logger('POST', `${req.originalUrl}`);
+        
+        filePath = join(process.cwd(), '/login', `${req.body.cpfUsuario}.json`);
+        let dados = fs.readFileSync(filePath);
+        userLogado = JSON.parse(dados);
+
+        async function confirmaUser(){
+            if (req.body.tokenBD != userLogado.tokenDB){
+                res.send("Usuário não autorizado");
+            }
+            else{
+                next();
+            }
+        }
+        await confirmaUser();
+    })
+    .post( async (req, res) => {
+        
+		await update1();
+		
+        async function update1() {
+
+            async function usandoBD(db) {
+					
+                let updateTipo1 = new Promise( (resolve, reject) => {                    
+                    let sql = `UPDATE ${req.body.tabela}
+                                SET presenca = ?
+                                WHERE processo_id = ? AND requerente = ? AND data >= '01/01/2024'`;
+                    let data = [];
+                    for (let i = 0; i < req.body.nomes.length; i++) {
+                        data = [];
+                        data.push(req.body.valores[i], req.body.processo, req.body.nomes[i]);
+                        db.run(sql, data, function(err) {
+                            if (err) {
+                              return reject(console.error(err.message));
+                            }
+                            console.log(`Row(s) updated: ${this.changes}`);
+                          
+                        });
+                    }
+                    return resolve(db);                 
+                });            
+                return updateTipo1;                    
+            }
+
+            iniciandoBD()
+            .then(usandoBD)                
+            .then( (resultado) => {
+                fechandoBD(resultado);                    
+                res.send({ sucesso: true });
                 },
                 (error) => {
                     console.log(`DEU ZICA !!!! [ ${error} ]`);

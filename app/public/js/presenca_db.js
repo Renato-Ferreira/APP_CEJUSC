@@ -1,4 +1,4 @@
-const { response } = require("express");
+//const { response } = require("express");
 var papeleta = {};
 
 function filipetaVirtual1(numProcesso){
@@ -28,6 +28,7 @@ function filipetaVirtual1(numProcesso){
                             <span><b>DATA:</b> ${response.filipeta.data}</span>
                             <span><b>HORÁRIO:</b> ${response.filipeta.horario}</span>
                             <span><b>SALA:</b> ${response.filipeta.sala}</span>
+                            <span><b>SITUAÇÃO:</b> ${response.filipeta.situacao}</span>
                         </p>
                         <p class="card-text"><a href="#" class="custom-link" onclick="papeletaCheck(1)"><b>REQUERENTE: </b></a>`; 
             for (let i = 0; i < response.filipeta.requerente.length; i++) {
@@ -127,6 +128,91 @@ function filipetaVirtual2(name){
    });
 }
 
+function atualizaPresenca(inf){    
+    let tabela = "";
+    let nomes = [];
+    let valores = [];
+    switch (inf.codUpdate[0].slice(1,2)) {
+        case "1":
+            tabela = "requerentes";
+            for (let i = 0; i < inf.codUpdate.length; i++) {
+                nomes.push(papeleta.requerente[inf.codUpdate[i].slice(2,3)]);
+                if (inf.codUpdate[i].slice(3) == 1) {
+                    valores.push('<span class="custom-check-mark"><b>&check;</b></span>');
+                }
+                else {
+                    valores.push("");
+                }
+            }            
+            break;
+        case "2":
+            tabela = "requerente_advs";
+            for (let i = 0; i < inf.codUpdate.length; i++) {
+                nomes.push(papeleta.adv_requerente[inf.codUpdate[i].slice(2,3)]);
+                if (inf.codUpdate[i].slice(3) == 1) {
+                    valores.push('<span class="custom-check-mark"><b>&check;</b></span>');
+                }
+                else {
+                    valores.push("");
+                }
+            } 
+            break;
+        case "3":
+            tabela = "requeridos";
+            for (let i = 0; i < inf.codUpdate.length; i++) {
+                nomes.push(papeleta.requerido[inf.codUpdate[i].slice(2,3)]);
+                if (inf.codUpdate[i].slice(3) == 1) {
+                    valores.push('<span class="custom-check-mark"><b>&check;</b></span>');
+                }
+                else {
+                    valores.push("");
+                }
+            }
+            break;
+        case "4":
+            tabela = "requerido_advs";
+            for (let i = 0; i < inf.codUpdate.length; i++) {
+                nomes.push(papeleta.adv_requerido[inf.codUpdate[i].slice(2,3)]);
+                if (inf.codUpdate[i].slice(3) == 1) {
+                    valores.push('<span class="custom-check-mark"><b>&check;</b></span>');
+                }
+                else {
+                    valores.push("");
+                }
+            }
+            break;
+        default:
+            break;
+    }
+   
+    $.ajax({
+        url : "/presenca/check",
+        method: "POST",
+        data: {
+            tokenBD: user.tokenDB,
+            cpfUsuario: user.id,
+            processo: inf.processo,
+            tabela,
+            nomes,
+            valores
+        }
+    })
+    .done(function(response){        
+        if (response.sucesso){
+            filipetaVirtual1(inf.processo);
+        } 
+        else {
+            $("#resultado").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
+                                    <strong>DADOS NÃO ENCONTRADOS.</strong> <small>Selecione outra opção para pesquisa.</small>
+                                  </div>`);
+            setTimeout(function() {$("#resultado").html("");}, 3000);
+        }
+    })
+   .fail(function(jqXHR, textStatus, response){
+        alert(response);
+   });
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -137,65 +223,36 @@ function papeletaCheck(num) {
     let outputP8 = ``;
     let outputP4 = ``;
     switch (num) {
-        case 1:
-            for (let i=0; i < papeleta.requerente.length; i++){
-                outputP8 += `<div>${papeleta.requerente[i]}</div>`;
-                outputP4 += `<div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio1${i}" value="option1${i}">
-                                <label class="form-check-label" for="inlineRadio1${i}"><b><small>PRESENÇA</small></b></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio2${i}" value="option2${i}">
-                                <label class="form-check-label" for="inlineRadio2${i}"><b><small>AUSÊNCIA</small></b></label>
-                            </div>`;
-            }
+        case 1:            
+			preenche(papeleta.requerente.length, papeleta.requerente);
             break;
         case 2:
-            for (let i=0; i < papeleta.adv_requerente.length; i++){
-                outputP8 += `<div>${papeleta.adv_requerente[i]}</div>`;
-                outputP4 += `<div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio1${i}" value="option1${i}">
-                                <label class="form-check-label" for="inlineRadio1${i}"><b><small>PRESENÇA</small></b></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio2${i}" value="option2${i}">
-                                <label class="form-check-label" for="inlineRadio2${i}"><b><small>AUSÊNCIA</small></b></label>
-                            </div>`;
-            }
+            preenche(papeleta.adv_requerente.length, papeleta.adv_requerente);
             break;
         case 3:
-            for (let i=0; i < papeleta.requerido.length; i++){
-                outputP8 += `<div>${papeleta.requerido[i]}</div>`;
-                outputP4 += `<div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio1${i}" value="option1${i}">
-                                <label class="form-check-label" for="inlineRadio1${i}"><b><small>PRESENÇA</small></b></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio2${i}" value="option2${i}">
-                                <label class="form-check-label" for="inlineRadio2${i}"><b><small>AUSÊNCIA</small></b></label>
-                            </div>`;
-            }
+            preenche(papeleta.requerido.length, papeleta.requerido);
             break;
         case 4:
-            for (let i=0; i < papeleta.adv_requerido.length; i++){
-                outputP8 += `<div>${papeleta.adv_requerido[i]}</div>`;
-                outputP4 += `<div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio1${i}" value="option1${i}">
-                                <label class="form-check-label" for="inlineRadio1${i}"><b><small>PRESENÇA</small></b></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio2${i}" value="option2${i}">
-                                <label class="form-check-label" for="inlineRadio2${i}"><b><small>AUSÊNCIA</small></b></label>
-                            </div>`;
-            }
-            break;
-    
+            preenche(papeleta.adv_requerido.length, papeleta.adv_requerido);            
+            break;    
         default:
             break;
     }
-    
-    $("#papeletaVirtual1").html(outputP8);
-    $("#papeletaVirtual2").html(outputP4);
+	function preenche(lim, valor) {
+		for (let i=0; i < lim; i++){
+                outputP8 += `<div>${valor[i]}</div>`;
+                outputP4 += `<div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio1${i}" value="${lim}${num}${i}1">
+                                <label class="form-check-label" for="inlineRadio1${i}"><b><small>PRESENÇA</small></b></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions${i}" id="inlineRadio2${i}" value="${lim}${num}${i}0">
+                                <label class="form-check-label" for="inlineRadio2${i}"><b><small>AUSÊNCIA</small></b></label>
+                            </div>`;
+            }
+        $("#papeletaVirtual1").html(outputP8);
+        $("#papeletaVirtual2").html(outputP4);
+    }    
 }
 
 //fechado parcialmente 31/07/2024

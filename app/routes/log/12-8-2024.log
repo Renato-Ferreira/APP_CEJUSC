@@ -1,0 +1,630 @@
+GET
+-------------------------------------------------------------------------
+Mon Aug 12 2024 11:39:54 GMT-0300 (Horário Padrão de Brasília)
+/
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:42 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:42 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:42 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:42 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:42 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.jaljxedmfcxlruwt.presenca
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:51 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:52 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:52 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0002949-21.2022
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:34:52 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:12 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+GET
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:12 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:31 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:31 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:31 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:31 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:31 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ejgsyzslvttmupxp.presenca
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:40 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:40 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:40 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0002949-21.2022
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 14:52:40 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:01:46 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ejgsyzslvttmupxp.completas
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:01:47 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ejgsyzslvttmupxp.presenca
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:01:55 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:01:55 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0002949-21.2022
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:01:55 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:01:55 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:25 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/nome
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:25 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:25 GMT-0300 (Horário Padrão de Brasília)
+Uma linha NÃO foi encontrada. Nome: %renato%
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:25 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:32 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/nome
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:32 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:32 GMT-0300 (Horário Padrão de Brasília)
+Uma linha NÃO foi encontrada. Nome: %roberto%
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:32 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:38 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/nome
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:38 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:38 GMT-0300 (Horário Padrão de Brasília)
+Uma linha NÃO foi encontrada. Nome: %carlos%
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:38 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+/presenca/nome
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Nome: %maria% Processo: 0002949-21.2022
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0002949-21.2022
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:10:45 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:11:45 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:11:45 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:11:45 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 0002949-21.2022
+-------------------------------------------------------------------------
+Mon Aug 12 2024 15:11:45 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 19:05:38 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:39 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:39 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:39 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:39 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ysrbstqbwyqvglmb.presenca
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:47 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:47 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:47 GMT-0300 (Horário Padrão de Brasília)
+Uma linha NÃO foi encontrada. Processo: 0010025-78.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:11:47 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:22 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:22 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:22 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:22 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/check
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:35 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:43 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:43 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:43 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:43 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:12:59 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:15:19 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:47 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:47 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+POST
+/valida/api
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:53 GMT-0300 (Horário Padrão de Brasília)
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:53 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:53 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:53 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:53 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.mtalggsdskswtggk.presenca
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:59 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:59 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:59 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:17:59 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:10 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:27 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:18:38 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:02 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:02 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:08 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:08 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:08 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:08 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:08 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.bhgzcalvpsqhbbmc.presenca
+GET
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:14 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:14 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:14 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:14 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:25:20 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:03 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+GET
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:03 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+/valida/api
+Usuário: 13326574860
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:13 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:13 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:13 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:13 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:13 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.vsjrtxxhilkfdnki.presenca
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:22 GMT-0300 (Horário Padrão de Brasília)
+/presenca/nome
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:22 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+Uma linha NÃO foi encontrada. Nome: %1002546642024%
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:22 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:22 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:28 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:28 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:28 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:28 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/check
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+POST
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:30:33 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/check
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:33:51 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/check
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:24 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:58 GMT-0300 (Horário Padrão de Brasília)
+/presenca/check
+Conectado ao Banco de Dados CEJUSC.
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:58 GMT-0300 (Horário Padrão de Brasília)
+POST
+/presenca/processo
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:58 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:58 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:59 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:59 GMT-0300 (Horário Padrão de Brasília)
+Uma linha FOI encontrada. Processo: 1002546-64.2024
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:34:59 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:38:11 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Mon Aug 12 2024 20:38:11 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
