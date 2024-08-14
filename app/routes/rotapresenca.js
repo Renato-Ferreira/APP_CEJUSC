@@ -34,6 +34,7 @@ const presencaRotas = (app) =>{
 					horario: "",
 					sala: "",
 					situacao: "",
+                    completa: "",
 					requerente: [],
                     check_rqrnt: [],
 					adv_requerente: [],
@@ -66,7 +67,7 @@ const presencaRotas = (app) =>{
                         }
                         else{
                             db.serialize( () => {
-                                let sql = `SELECT a.assunto AS assunto, b.data AS data, b.horario AS horario, b.sala AS sala, b.situacao AS situacao
+                                let sql = `SELECT a.assunto AS assunto, b.data AS data, b.horario AS horario, b.sala AS sala, b.situacao AS situacao, b.completa AS completa
                                             FROM processos a, geral_processos b
                                             WHERE a.processo_id = ? AND a.processo_id = b.processo_id`;
                             
@@ -75,7 +76,7 @@ const presencaRotas = (app) =>{
                                             WHERE a.processo_id = ? AND
                                             a.data >= '01/01/2024'`;
 
-                                let sql3 = `SELECT DISTINCT a.advogado AS advogado_rqrnt, a.presenca AS check_adv_rqrn
+                                let sql3 = `SELECT DISTINCT a.advogado AS advogado_rqrnt, a.presenca AS check_adv_rqrnt
                                             FROM requerente_advs a
                                             WHERE a.processo_id = ? AND
                                             a.data >= '01/01/2024'`;
@@ -105,6 +106,7 @@ const presencaRotas = (app) =>{
                                     }
                                     else {                                            
                                         filipeta.adv_requerente.push(row.advogado_rqrnt);
+                                        filipeta.check_adv_rqrnt.push(row.check_adv_rqrnt);
                                     }
                                 });
                                 db.each(sql4, [filipeta.processo], (err, row) => {
@@ -113,6 +115,7 @@ const presencaRotas = (app) =>{
                                     }
                                     else {                                            
                                         filipeta.requerido.push(row.requerido);
+                                        filipeta.check_rqrd.push(row.check_rqrd);
                                     }
                                 });
                                 db.each(sql5, [filipeta.processo], (err, row) => {
@@ -121,6 +124,7 @@ const presencaRotas = (app) =>{
                                     }
                                     else {                                            
                                         filipeta.adv_requerido.push(row.advogado_rqrd);
+                                        filipeta.check_adv_rqrd.push(row.check_adv_rqrd);
                                     }                                        
                                 });
                                 db.get(sql, [filipeta.processo], (err, row) => {
@@ -133,6 +137,7 @@ const presencaRotas = (app) =>{
                                         filipeta.horario = row.horario;
                                         filipeta.sala = row.sala;
                                         filipeta.situacao = row.situacao;
+                                        filipeta.completa = row.completa;
                                         logger(`Uma linha FOI encontrada. Processo: ${filipeta.processo}`);
                                         filipeta.preenchida = true;                                            
                                         return resolve({ db, filipeta });
@@ -264,7 +269,7 @@ const presencaRotas = (app) =>{
                 let updateTipo1 = new Promise( (resolve, reject) => {                    
                     let sql = `UPDATE ${req.body.tabela}
                                 SET presenca = ?
-                                WHERE processo_id = ? AND requerente = ? AND data >= '01/01/2024'`;
+                                WHERE processo_id = ? AND ${req.body.coluna} = ? AND data >= '01/01/2024'`;
                     let data = [];
                     for (let i = 0; i < req.body.nomes.length; i++) {
                         data = [];
@@ -273,13 +278,68 @@ const presencaRotas = (app) =>{
                             if (err) {
                               return reject(console.error(err.message));
                             }
-                            console.log(`Row(s) updated: ${this.changes}`);
-                          
+                            logger(`Uma linha foi atualizada. UPDATE: ${this.changes}`);
                         });
                     }
                     return resolve(db);                 
                 });            
                 return updateTipo1;                    
+            }
+
+            iniciandoBD()
+            .then(usandoBD)                
+            .then( (resultado) => {
+                fechandoBD(resultado);                    
+                res.send({ sucesso: true });
+                },
+                (error) => {
+                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    res.send({ sucesso: false, erro: error.message });
+                }
+            );             
+        }
+    });
+
+    app.route('/presenca/check/completa')
+    .all( async (req, res, next) => {
+        logger('POST', `${req.originalUrl}`);
+        
+        filePath = join(process.cwd(), '/login', `${req.body.cpfUsuario}.json`);
+        let dados = fs.readFileSync(filePath);
+        userLogado = JSON.parse(dados);
+
+        async function confirmaUser(){
+            if (req.body.tokenBD != userLogado.tokenDB){
+                res.send("Usuário não autorizado");
+            }
+            else{
+                next();
+            }
+        }
+        await confirmaUser();
+    })
+    .post( async (req, res) => {
+        
+		await update2();
+		
+        async function update2() {
+
+            async function usandoBD(db) {
+					
+                let updateTipo2 = new Promise( (resolve, reject) => {                    
+                    let sql = `UPDATE geral_processos
+                                SET completa = ?
+                                WHERE processo_id = ? AND data >= '01/01/2024'`;
+                    let data = [req.body.valor, req.body.processo];                   
+					db.run(sql, data, function(err) {
+						if (err) {
+						  return reject(console.error(err.message));
+						}
+						logger(`Uma linha foi atualizada. UPDATE: ${this.changes}`);
+					});                    
+                    return resolve(db);                 
+                });            
+                return updateTipo2;                    
             }
 
             iniciandoBD()

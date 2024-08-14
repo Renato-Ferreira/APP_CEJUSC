@@ -23,7 +23,11 @@ function filipetaVirtual1(numProcesso){
                     </div>
                     <div class="card-body text-success">
                         <p class="card-text" id="filipetaSpan">
-                            <span><b>PROCESSO:</b> ${response.filipeta.processo}</span>
+                            <span><a href="#" class="custom-link" onclick="papeletaCompleta()"><b>PROCESSO:</b></a> ${response.filipeta.processo}`;
+            if (response.filipeta.completa) {
+                output += ` ${response.filipeta.completa}`;
+            }
+            output += `</span>
                             <span><b>ASSUNTO:</b> ${response.filipeta.assunto}</span>
                             <span><b>DATA:</b> ${response.filipeta.data}</span>
                             <span><b>HORÁRIO:</b> ${response.filipeta.horario}</span>
@@ -130,11 +134,13 @@ function filipetaVirtual2(name){
 
 function atualizaPresenca(inf){    
     let tabela = "";
+    let coluna = "";
     let nomes = [];
     let valores = [];
     switch (inf.codUpdate[0].slice(1,2)) {
         case "1":
             tabela = "requerentes";
+            coluna = "requerente";
             for (let i = 0; i < inf.codUpdate.length; i++) {
                 nomes.push(papeleta.requerente[inf.codUpdate[i].slice(2,3)]);
                 if (inf.codUpdate[i].slice(3) == 1) {
@@ -147,6 +153,7 @@ function atualizaPresenca(inf){
             break;
         case "2":
             tabela = "requerente_advs";
+            coluna = "advogado";
             for (let i = 0; i < inf.codUpdate.length; i++) {
                 nomes.push(papeleta.adv_requerente[inf.codUpdate[i].slice(2,3)]);
                 if (inf.codUpdate[i].slice(3) == 1) {
@@ -159,6 +166,7 @@ function atualizaPresenca(inf){
             break;
         case "3":
             tabela = "requeridos";
+            coluna = "requerido";
             for (let i = 0; i < inf.codUpdate.length; i++) {
                 nomes.push(papeleta.requerido[inf.codUpdate[i].slice(2,3)]);
                 if (inf.codUpdate[i].slice(3) == 1) {
@@ -171,6 +179,7 @@ function atualizaPresenca(inf){
             break;
         case "4":
             tabela = "requerido_advs";
+            coluna = "advogado";
             for (let i = 0; i < inf.codUpdate.length; i++) {
                 nomes.push(papeleta.adv_requerido[inf.codUpdate[i].slice(2,3)]);
                 if (inf.codUpdate[i].slice(3) == 1) {
@@ -193,6 +202,7 @@ function atualizaPresenca(inf){
             cpfUsuario: user.id,
             processo: inf.processo,
             tabela,
+            coluna,
             nomes,
             valores
         }

@@ -56,7 +56,12 @@ body{
 
 .custom-check-mark {
     color: red; /* Altere para a cor desejada */
-    font-size: 30px;
+    font-size: 24px;
+}
+
+.custom-copy {
+    color: red; /* Altere para a cor desejada */
+    font-size: 24px;
 }
 
 .btn-close.custom {
