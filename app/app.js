@@ -39,11 +39,11 @@ var presenca = (req, res, next) => {
 }
 app.use('/presenca', presenca);
 
-//middleware para reclamação
+/*middleware para reclamação
 var reclamacao = (req, res, next) => {
     const routerReclamacao = require('./routes/recroute');
     routerReclamacao(app);
     next();
 }
 app.use('/reclamacao', reclamacao);
-//
+*/

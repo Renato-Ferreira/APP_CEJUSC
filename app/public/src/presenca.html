@@ -117,8 +117,8 @@
                 </div>
               </div>
 
-              <!-- Modal -->
-              <div class="modal fade" id="papeletaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <!-- Modal 1-->
+              <div class="modal fade" id="papeletaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="papeletaModal" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -134,12 +134,31 @@
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Sair</button>
-                      <button type="button" class="btn btn-outline-success" id="btnRegistraPresenca">Confirma</button>
+                      <button type="button" class="btn btn-outline-success" id="btnRegistraPresenca">CONFIRMA</button>
+                      <button type="button" class="btn btn-outline-warning" id="btnAddParte">NOVO</button>
+                      <!--<button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">SAIR</button>-->                      
                     </div>
                   </div>
                 </div>
-              </div><!--fim do Modal-->
+              </div><!--fim do Modal 1-->
+
+              <!-- Modal 2-->
+              <div class="modal fade" id="genericModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="genericModal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="genericModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="genericModalCorpo">
+                      
+                    </div>
+                    <div class="modal-footer" id="rodapeModalGeral">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div><!--fim do Modal 2-->
 
             </div>
                     

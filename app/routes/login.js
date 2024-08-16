@@ -46,7 +46,7 @@ const loginRoute = (app) => {
                 return new Promise( (resolve, reject) => {
                     let db = new sqlite3.Database('./db/CEJUSC.db', sqlite3.OPEN_READWRITE, (err) => {
                         if (err) {
-                            return reject(console.error(err.message));
+                            return reject(logger(`MSG ERROR: ${err.message}`));
                         }
                         logger('Conectado ao Banco de Dados CEJUSC.');
                     });
@@ -60,7 +60,7 @@ const loginRoute = (app) => {
                         let sql = `SELECT userName nome, userCPF cpf, password pswd FROM usuarios`;
                         db.each(sql, (err, row) => {
                             if (err) {
-                                return reject(console.error(err.message));
+                                return reject(logger(`MSG ERROR: ${err.message}`));
                             }
                             else{
                                 if (user == row.cpf && senha == row.pswd) {
@@ -80,7 +80,7 @@ const loginRoute = (app) => {
                 return new Promise( (resolve, reject) => {
                     db.close((err) => {
                         if (err) {
-                            return reject(console.error(err.message));
+                            return reject(logger(`MSG ERROR: ${err.message}`));
                         }
                         logger('Banco de Dados CEJUSC fechado.');
                         return resolve(msg);
@@ -100,7 +100,7 @@ const loginRoute = (app) => {
                         }
                     },
                     (error) => {
-                        console.log(`DEU ZICA !!!! [ ${error} ]`);
+                        logger(`MSG ERROR: Infelizmente deu zica !!! ${error}`);
                     }
                 );
 

@@ -223,6 +223,72 @@ function atualizaPresenca(inf){
    });
 }
 
+function updateCompleta(valorSet){    
+    let valor ="";
+    if (valorSet) {
+        valor = `<span class="custom-copy"><b>&copy;</b></span>`;
+    }
+    $("#genericModal").modal("hide");
+    $.ajax({
+        url : "/presenca/check/completa",
+        method: "POST",
+        data: {
+            tokenBD: user.tokenDB,
+            cpfUsuario: user.id,
+            processo: papeleta.processo,
+            valor
+        },
+    })
+    .done(function(response){        
+        if (response.sucesso){
+            filipetaVirtual1(papeleta.processo);
+        } 
+        else {
+            $("#resultado").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
+                                    <strong>OCORREU UM PROBLEMA.</strong> <small>Refaça sua pesquisa e tente novamente.</small>
+                                  </div>`);
+            setTimeout(function() {$("#resultado").html("");}, 3000);
+        }
+    })
+   .fail(function(jqXHR, textStatus, response){
+        alert(response);
+   });
+}
+
+function insertNewPart(){
+    let dadosDB = JSON.parse($("#saveButton").attr("data-dados"));
+    let nomeParte = $("#geralEntradaParte").val();    
+    $("#genericModal").modal("hide");
+
+    if (nomeParte) {
+        $.ajax({
+            url : "/presenca/add/novaparte",
+            method: "POST",
+            data: {
+                tokenBD: user.tokenDB,
+                cpfUsuario: user.id,
+                processo: papeleta.processo,
+                tabela: dadosDB.tabelaDB,
+                coluna: dadosDB.colunaDB,
+                nomeParte
+            },
+        })
+        .done(function(response){        
+            if (response.sucesso){
+                filipetaVirtual1(papeleta.processo);
+            } 
+            else {
+                $("#resultado").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
+                                        <strong>OCORREU UM PROBLEMA.</strong> <small>Tente novamente inserir os dados.</small>
+                                      </div>`);
+                setTimeout(function() {$("#resultado").html("");}, 3000);
+            }
+        })
+       .fail(function(jqXHR, textStatus, response){
+            alert(response);
+       });
+    }    
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -265,4 +331,51 @@ function papeletaCheck(num) {
     }    
 }
 
-//fechado parcialmente 31/07/2024
+function papeletaCompleta() {
+    $("#genericModal").modal("show");
+    $("#genericModalLabel").html("Audiência Completa");
+    $("#genericModalCorpo").html("A Audiência selecionada já está completa ?");
+    $("#rodapeModalGeral").html(`<button type="button" class="btn btn-outline-success" onclick="updateCompleta(1)"><b>SIM</b></button>
+                                <button type="button" class="btn btn-outline-danger" onclick="updateCompleta(0)"><b>NÃO</b></button>`);
+}
+
+function adicionaParte(tabela) {
+    let nome1 = "";
+    let dadosDB = {
+        tabelaDB: "",
+        colunaDB: ""
+    };
+    switch (tabela) {
+        case 1:
+            nome1 = "REQUERENTE";
+            dadosDB.tabelaDB = "requerentes";
+            dadosDB.colunaDB = "requerente";
+            break;
+        case 2:
+            nome1 = "Advogado do Requerente"
+            dadosDB.tabelaDB = "requerente_advs";
+            dadosDB.colunaDB = "advogado";
+            break;
+        case 3:
+            nome1 = "Requerido"
+            dadosDB.tabelaDB = "requeridos";
+            dadosDB.colunaDB = "requerido";
+            break;
+        case 4:
+            nome1 = "Advogado do Requerido"
+            dadosDB.tabelaDB = "requerido_advs";
+            dadosDB.colunaDB = "advogado";
+            break;
+    
+        default:
+            break;
+    }
+    $("#genericModal").modal("show");
+    $("#genericModalLabel").html("Registro de Participante");    
+    $("#genericModalCorpo").html(`<label for="geralEntradaParte" class="form-label">${nome1}</label>
+                                <input class="form-control" type="text" id="geralEntradaParte" placeholder="Dados da Parte" aria-label="geralEntradaParte"></input>`);
+    $("#rodapeModalGeral").html(`<button type="button" class="btn btn-outline-success" id="saveButton" data-dados='${JSON.stringify(dadosDB)}' onclick="insertNewPart()"><b>SALVA</b></button>
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" onclick=""><b>CANCELA</b></button>`);
+}
+
+//fechado parcialmente 16/08/2024

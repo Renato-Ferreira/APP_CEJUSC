@@ -52,8 +52,13 @@ $( () => {
             }            
         }
         $('#papeletaModal').modal('hide');
-        console.log("codUpdate: ", codUpdate); //PARA VERIFICAR OS ERROS
         atualizaPresenca({processo: $("#dadosBuscaPresenca").val(), codUpdate});
+    });
+
+    $("#btnAddParte").on("click", function() {
+        let tabela = parseInt($(`input[name="inlineRadioOptions0"`).val().slice(1,2));
+        $('#papeletaModal').modal('hide');
+        adicionaParte(tabela);
     });
     
 });

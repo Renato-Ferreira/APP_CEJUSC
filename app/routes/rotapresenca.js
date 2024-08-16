@@ -58,7 +58,8 @@ const presencaRotas = (app) =>{
                     //verifica se existe o processo já cadastrado// first row only
                     db.get(sql, [filipeta.processo], (err, row) => {
                         if (err) {
-                            return reject(console.error(err.message));
+                            //return reject(console.error(err.message));
+                            return reject(logger(`MSG ERROR: ${err.message}`));
                         } 
                         else if (!row){
                             logger(`Uma linha NÃO foi encontrada. Processo: ${filipeta.processo}`);
@@ -93,7 +94,7 @@ const presencaRotas = (app) =>{
 
                                 db.each(sql2, [filipeta.processo], (err, row) => {
                                     if(err) {
-                                        return reject(console.error(err.message));
+                                        return reject(logger(`MSG ERROR: ${err.message}`));
                                     }
                                     else {                                            
                                         filipeta.requerente.push(row.requerente);
@@ -102,7 +103,7 @@ const presencaRotas = (app) =>{
                                 });
                                 db.each(sql3, [filipeta.processo], (err, row) => {
                                     if(err) {
-                                        return reject(console.error(err.message));
+                                        return reject(logger(`MSG ERROR: ${err.message}`));
                                     }
                                     else {                                            
                                         filipeta.adv_requerente.push(row.advogado_rqrnt);
@@ -111,7 +112,7 @@ const presencaRotas = (app) =>{
                                 });
                                 db.each(sql4, [filipeta.processo], (err, row) => {
                                     if(err) {
-                                        return reject(console.error(err.message));
+                                        return reject(logger(`MSG ERROR: ${err.message}`));
                                     }
                                     else {                                            
                                         filipeta.requerido.push(row.requerido);
@@ -120,7 +121,7 @@ const presencaRotas = (app) =>{
                                 });
                                 db.each(sql5, [filipeta.processo], (err, row) => {
                                     if(err) {
-                                        return reject(console.error(err.message));
+                                        return reject(logger(`MSG ERROR: ${err.message}`));
                                     }
                                     else {                                            
                                         filipeta.adv_requerido.push(row.advogado_rqrd);
@@ -129,7 +130,7 @@ const presencaRotas = (app) =>{
                                 });
                                 db.get(sql, [filipeta.processo], (err, row) => {
                                     if(err) {
-                                        return reject(console.error(err.message));
+                                        return reject(logger(`MSG ERROR: ${err.message}`));
                                     }
                                     else {                                            
                                         filipeta.assunto = row.assunto;
@@ -154,12 +155,12 @@ const presencaRotas = (app) =>{
             iniciandoBD()
             .then(usandoBD)                
             .then( (resultado) => {
-                //console.log("Filipeta resultado:", resultado.filipeta); // Adicione este log
                 fechandoBD(resultado.db);                    
                 res.send({ sucesso: true, filipeta: resultado.filipeta });
                 },
                 (error) => {
-                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    //console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    logger(`MSG ERROR: Infelizmente deu zica !!! ${error}`);
                     res.send({ sucesso: false, erro: error.message });
                 }
             );             
@@ -211,7 +212,7 @@ const presencaRotas = (app) =>{
 
                     db.get(sql, [req.body.nome], (err, row) => {
                         if (err) {
-                            return reject(console.error(err.message));
+                            return reject(logger(`MSG ERROR: ${err.message}`));
                         } 
                         else if (!row){
                             logger(`Uma linha NÃO foi encontrada. Nome: ${req.body.nome}`);
@@ -233,7 +234,7 @@ const presencaRotas = (app) =>{
                 res.send({ sucesso: true, processo: resultado.nProcesso });
                 },
                 (error) => {
-                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    logger(`MSG ERROR: Infelizmente deu zica !!! ${error}`);
                     res.send({ sucesso: false, erro: error.message });
                 }
             );             
@@ -276,7 +277,7 @@ const presencaRotas = (app) =>{
                         data.push(req.body.valores[i], req.body.processo, req.body.nomes[i]);
                         db.run(sql, data, function(err) {
                             if (err) {
-                              return reject(console.error(err.message));
+                                return reject(logger(`MSG ERROR: ${err.message}`));
                             }
                             logger(`Uma linha foi atualizada. UPDATE: ${this.changes}`);
                         });
@@ -293,7 +294,7 @@ const presencaRotas = (app) =>{
                 res.send({ sucesso: true });
                 },
                 (error) => {
-                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    logger(`MSG ERROR: Infelizmente deu zica !!! ${error}`);
                     res.send({ sucesso: false, erro: error.message });
                 }
             );             
@@ -333,7 +334,7 @@ const presencaRotas = (app) =>{
                     let data = [req.body.valor, req.body.processo];                   
 					db.run(sql, data, function(err) {
 						if (err) {
-						  return reject(console.error(err.message));
+                            return reject(logger(`MSG ERROR: ${err.message}`));
 						}
 						logger(`Uma linha foi atualizada. UPDATE: ${this.changes}`);
 					});                    
@@ -349,7 +350,62 @@ const presencaRotas = (app) =>{
                 res.send({ sucesso: true });
                 },
                 (error) => {
-                    console.log(`DEU ZICA !!!! [ ${error} ]`);
+                    logger(`MSG ERROR: Infelizmente deu zica !!! ${error}`);
+                    res.send({ sucesso: false, erro: error.message });
+                }
+            );             
+        }
+    });
+
+    app.route('/presenca/add/novaparte')
+    .all( async (req, res, next) => {
+        logger('POST', `${req.originalUrl}`);
+        
+        filePath = join(process.cwd(), '/login', `${req.body.cpfUsuario}.json`);
+        let dados = fs.readFileSync(filePath);
+        userLogado = JSON.parse(dados);
+
+        async function confirmaUser(){
+            if (req.body.tokenBD != userLogado.tokenDB){
+                res.send("Usuário não autorizado");
+            }
+            else{
+                next();
+            }
+        }
+        await confirmaUser();
+    })
+    .post( async (req, res) => {
+        
+		await insert1();
+		
+        async function insert1() {
+
+            async function usandoBD(db) {
+					
+                let insertTipo1 = new Promise( (resolve, reject) => {                    
+                    let sql = `INSERT INTO ${req.body.tabela} (processo_id, ${req.body.coluna}, data, presenca)
+                                VALUES (?, ?, DATE('now'), '<span class="custom-check-mark"><b>&check;</b></span>')`;
+                    let data = [req.body.processo, req.body.nomeParte];                   
+					db.run(sql, data, function(err) {
+						if (err) {
+						  return reject(logger(`MSG ERROR: ${err.message}`));
+						}
+						logger(`Uma linha foi atualizada. UPDATE: ${this.lastID} ; ${this.changes}`);
+					});                    
+                    return resolve(db);                 
+                });            
+                return insertTipo1;                    
+            }
+
+            iniciandoBD()
+            .then(usandoBD)                
+            .then( (resultado) => {
+                fechandoBD(resultado);                    
+                res.send({ sucesso: true });
+                },
+                (error) => {
+                    logger(`MSG ERROR: Infelizmente deu zica !!! ${error}`);
                     res.send({ sucesso: false, erro: error.message });
                 }
             );             
@@ -358,4 +414,4 @@ const presencaRotas = (app) =>{
 
 }
 module.exports = presencaRotas;
-//fechado parcialmente 31/07/2024
+//fechado parcialmente 16/08/2024
