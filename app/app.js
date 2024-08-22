@@ -39,6 +39,14 @@ var presenca = (req, res, next) => {
 }
 app.use('/presenca', presenca);
 
+//middleware para pauta
+var pauta = (req, res, next) => {
+    const routerPauta = require('./routes/rotapauta');
+    routerPauta(app);
+    next();
+}
+app.use('/pauta', pauta);
+
 /*middleware para reclamação
 var reclamacao = (req, res, next) => {
     const routerReclamacao = require('./routes/recroute');

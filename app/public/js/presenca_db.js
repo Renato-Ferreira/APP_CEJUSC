@@ -352,17 +352,17 @@ function adicionaParte(tabela) {
             dadosDB.colunaDB = "requerente";
             break;
         case 2:
-            nome1 = "Advogado do Requerente"
+            nome1 = "ADVOGADO DO REQUERENTE"
             dadosDB.tabelaDB = "requerente_advs";
             dadosDB.colunaDB = "advogado";
             break;
         case 3:
-            nome1 = "Requerido"
+            nome1 = "REQUERIDO"
             dadosDB.tabelaDB = "requeridos";
             dadosDB.colunaDB = "requerido";
             break;
         case 4:
-            nome1 = "Advogado do Requerido"
+            nome1 = "ADVOGADO DO REQUERIDO"
             dadosDB.tabelaDB = "requerido_advs";
             dadosDB.colunaDB = "advogado";
             break;

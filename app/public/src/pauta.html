@@ -13,6 +13,7 @@
         
         <link rel="stylesheet" href="../css/custom.css">  
         <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/pauta_db.js"></script>
   
     </head>
 
@@ -43,7 +44,7 @@
                       Pauta
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Diária</a></li>
+                      <li><a class="dropdown-item custom-link" href="#" onclick="pautaDia()">Diária</a></li>
                       <li><a class="dropdown-item" href="#">Por Sala</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Por Data</a></li>
@@ -89,20 +90,34 @@
         
 
 
-        <div class="container-fluid" id="principal">
+        <div class="container-fluid" id="principal_pauta">
+          <div class="row border-top border-success">
 
-            <div class="row border-top border-success">
+            <div class="row" id="area_resultado_pauta">               
+              <div class="col-12" id="resultado_pauta">
 
-                <div class="col-2 border-end border-success" id="">
-                    <p>RENATO</p>
+                <div class="row" id="resultado_pauta_superior">
+                  <div class="col-6" id="resultado_pauta_superior_1">
+                    ...
+                  </div>
+                  <div class="col-6" id="resultado_pauta_superior_2">
+                    ...
+                  </div>
                 </div>
 
-                <div class="col-10 overflow-auto" id="conteudoPrincipal">    
-    
+                <div class="row" id="resultado_pauta_inferior">
+                  <div class="col-6" id="resultado_pauta_inferior_1">
+                    ...
+                  </div>
+                  <div class="col-6" id="resultado_pauta_inferior_2">
+                    ...
+                  </div>
                 </div>
 
+              </div>
             </div>
-                    
+
+          </div>                    
         </div>
         
     </body>
