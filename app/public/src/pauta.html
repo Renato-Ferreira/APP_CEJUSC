@@ -13,6 +13,7 @@
         
         <link rel="stylesheet" href="../css/custom.css">  
         <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/pauta.js"></script>
         <script type="text/javascript" src="../js/pauta_db.js"></script>
   
     </head>
@@ -44,8 +45,8 @@
                       Pauta
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item custom-link" href="#" onclick="pautaDia()">Diária</a></li>
-                      <li><a class="dropdown-item" href="#">Por Sala</a></li>
+                      <li><a class="dropdown-item custom-link" href="#" onclick="pautaDia(5)">Diária</a></li>
+                      <li><a class="dropdown-item custom-link" href="#" id="printPage">Por Sala</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Por Data</a></li>
                     </ul>
@@ -92,6 +93,41 @@
 
         <div class="container-fluid" id="principal_pauta">
           <div class="row border-top border-success">
+
+            <!-- Modal -->
+            <div class="modal fade" id="prntModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="prntModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="prntModalLabel">Impressão</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p><b>Escolha uma SALA para imprimir:</b></p>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                      <label class="form-check-label" for="inlineRadio1">SALA 1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                      <label class="form-check-label" for="inlineRadio2">SALA 2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+                      <label class="form-check-label" for="inlineRadio3">SALA 3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
+                      <label class="form-check-label" for="inlineRadio4">SALA 4</label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">SAIR</button>
+                    <button type="button" class="btn btn-outline-success" id="imprimeBtn">IMPRIMIR</button>
+                  </div>
+                </div>
+              </div>
+            </div><!--end Modal-->
 
             <div class="row" id="area_resultado_pauta">               
               <div class="col-12" id="resultado_pauta">

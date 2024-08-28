@@ -59,6 +59,7 @@ const pautaRotas = (app) =>{
                             }
                             else {
                                 linha = row;
+                                logger("Consulta BD OK - rotapauta.js (sql)");
                             }
                         });
                         db.all(sql2, [], (err, row) => {
@@ -67,6 +68,7 @@ const pautaRotas = (app) =>{
                             }
                             else {                                            
                                 linha1 = row;
+                                logger("Consulta BD OK - rotapauta.js (sql1)");
                             }
                         });
                         db.all(sql3, [], (err, row) => {
@@ -75,6 +77,7 @@ const pautaRotas = (app) =>{
                             }
                             else {                                            
                                 linha2 = row;
+                                logger("Consulta BD OK - rotapauta.js (sql2)");
                                 return resolve({ db, linha, linha1, linha2 });
                             }
                         });

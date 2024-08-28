@@ -87,6 +87,15 @@ body{
     background-color: darkred; /* Cor de fundo ao passar o mouse */
   }
 
+ /* .card-text {
+    max-height: 200px; /* Define a altura máxima antes de aparecer a barra de rolagem */
+ /*   overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+ /* }*/
+
+  #spanCustonCard{
+    font-size: 12px;
+  }
+
 #conteudoPrincipal{
     height: 86vh;
 }
