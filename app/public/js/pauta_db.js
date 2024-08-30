@@ -108,25 +108,27 @@ function pautaDia(opcao) {
                     $("#resultado_pauta_superior_1").html(sala1);
                     break;
                 case 2:
-                    $("#resultado_pauta_superior_2").html(sala2);
+                    $("#resultado_pauta_superior_1").html(sala2);
                     break;
                 case 3:
-                    $("#resultado_pauta_inferior_1").html(sala3);
+                    $("#resultado_pauta_superior_1").html(sala3);
                     break;
                 case 4:
-                    $("#resultado_pauta_inferior_2").html(sala4);
+                    $("#resultado_pauta_superior_1").html(sala4);
+                    break;
+                case 0:
+                    $("#resultado_pauta_superior_1").html("...");
+                    $("#resultado_pauta_superior_2").html("...");
+                    $("#resultado_pauta_inferior_1").html("...");
+                    $("#resultado_pauta_inferior_2").html("...");
+                    break;
                 default:
                     $("#resultado_pauta_superior_1").html(sala1);
                     $("#resultado_pauta_superior_2").html(sala2);
                     $("#resultado_pauta_inferior_1").html(sala3);
                     $("#resultado_pauta_inferior_2").html(sala4);
                     break;
-            }
-
-            /*$("#resultado_pauta_superior_1").html(sala1);
-            $("#resultado_pauta_superior_2").html(sala2);
-            $("#resultado_pauta_inferior_1").html(sala3);
-            $("#resultado_pauta_inferior_2").html(sala4);*/
+            }            
         } 
         else {
             $("#resultado_pauta").html(`<div class="alert alert-warning" style="width: 35rem;" role="alert">
