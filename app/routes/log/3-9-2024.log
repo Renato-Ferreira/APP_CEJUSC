@@ -1,0 +1,599 @@
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:30:07 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:09 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:09 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:09 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:09 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:09 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fzpyfkyqiscyyygm.presenca
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:11 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.fzpyfkyqiscyyygm.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:13 GMT-0300 (Horário Padrão de Brasília)
+/pauta/diaria
+POST
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:13 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:13 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:13 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:13 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:13 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:20 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:20 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:20 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:20 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:20 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:20 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:32 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:32 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:32 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:32 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:32 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:32 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:41 GMT-0300 (Horário Padrão de Brasília)
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:41 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:41 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:41 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:41 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:41 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:51 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:51 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:51 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:51 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:51 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:31:51 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:32:00 GMT-0300 (Horário Padrão de Brasília)
+/pauta/diaria
+POST
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:32:00 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:32:00 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:32:00 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:32:00 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:32:00 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:08 GMT-0300 (Horário Padrão de Brasília)
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:08 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:27 GMT-0300 (Horário Padrão de Brasília)
+POST
+/valida/api
+Usuário: 13326574860
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:27 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:27 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:27 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:27 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ycyevnaiigzcyuak.presenca
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:28 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ycyevnaiigzcyuak.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:30 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:30 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:30 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:30 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:30 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:48:30 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:04 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.ycyevnaiigzcyuak.completas
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:05 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.ycyevnaiigzcyuak.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:07 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:07 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:07 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:07 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:07 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:07 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:12 GMT-0300 (Horário Padrão de Brasília)
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:12 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:12 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:12 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:12 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:12 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:19 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:51:19 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:00 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+POST
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:00 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:00 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:00 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:00 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.xvkjqjcoscctkhwy.presenca
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:01 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.xvkjqjcoscctkhwy.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:03 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:03 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:03 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:03 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:03 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:53:03 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:33 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:33 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+POST
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:38 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+Usuário: 13326574860
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:38 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:38 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:38 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:38 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.mvtcdbzuiacqtauh.presenca
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.mvtcdbzuiacqtauh.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:41 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:41 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:41 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:41 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:41 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:56:41 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:39 GMT-0300 (Horário Padrão de Brasília)
+/
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:55 GMT-0300 (Horário Padrão de Brasília)
+POST
+Usuário: 13326574860
+/valida/api
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:55 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:55 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:55 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:55 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.bmupfhendsomeuty.presenca
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:57 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.bmupfhendsomeuty.pauta
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:58 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:58 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:58 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:58 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:58 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:58:58 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:59:11 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:59:11 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:59:11 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:59:11 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:59:11 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 14:59:11 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:13:32 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.bmupfhendsomeuty.completas
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:13:33 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.bmupfhendsomeuty.pauta
+GET
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:34:11 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.bmupfhendsomeuty.completas
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:34:12 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.bmupfhendsomeuty.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:09 GMT-0300 (Horário Padrão de Brasília)
+/principal/13326574860.bmupfhendsomeuty.completas
+GET
+GET
+/principal/13326574860.bmupfhendsomeuty.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:10 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:20 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:20 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:20 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:20 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:20 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:36:20 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:28 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.bmupfhendsomeuty.completas
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:29 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.bmupfhendsomeuty.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:31 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:31 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:31 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:31 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:31 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:31 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+POST
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:42 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:42 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:42 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:42 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:42 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:39:42 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:40:54 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:40:54 GMT-0300 (Horário Padrão de Brasília)
+GET
+/
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:14 GMT-0300 (Horário Padrão de Brasília)
+/valida/api
+POST
+Usuário: 13326574860
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:14 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:14 GMT-0300 (Horário Padrão de Brasília)
+Renato Ferreira >>>LOGOU
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:14 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:14 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hcyypriivnjviklw.presenca
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:15 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hcyypriivnjviklw.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:17 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:17 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:17 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:17 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:17 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:17 GMT-0300 (Horário Padrão de Brasília)
+/pauta/diaria
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:30 GMT-0300 (Horário Padrão de Brasília)
+POST
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:30 GMT-0300 (Horário Padrão de Brasília)
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:30 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:30 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:30 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:41:30 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:39 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hcyypriivnjviklw.completas
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:40 GMT-0300 (Horário Padrão de Brasília)
+GET
+/principal/13326574860.hcyypriivnjviklw.pauta
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:45 GMT-0300 (Horário Padrão de Brasília)
+POST
+/pauta/diaria
+Conectado ao Banco de Dados CEJUSC.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:45 GMT-0300 (Horário Padrão de Brasília)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:45 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:45 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql1)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:45 GMT-0300 (Horário Padrão de Brasília)
+Consulta BD OK - rotapauta.js (sql2)
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:42:45 GMT-0300 (Horário Padrão de Brasília)
+Banco de Dados CEJUSC fechado.
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:49:43 GMT-0300 (Horário Padrão de Brasília)
+GET
+/logout/13326574860
+Usuário 13326574860 DESLOGOU >>>
+-------------------------------------------------------------------------
+Tue Sep 03 2024 15:49:43 GMT-0300 (Horário Padrão de Brasília)
+GET
+/

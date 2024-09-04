@@ -1,7 +1,9 @@
 $( () => {
 
     $("#pautaDiaria").on("click", function() {
-        pautaDia(5);
+        pautaDia(5, '08/05/2024');
+        /*let dateBD = datAgora();
+        console.log(dateBD);*/
     });
 
     $("#printPage").on("click", function() {
@@ -25,7 +27,7 @@ $( () => {
             $("#resultado_pauta_superior_2").html("...");
             $("#resultado_pauta_inferior_1").html("...");
             $("#resultado_pauta_inferior_2").html("...");
-            pautaDia(opt);
+            pautaDia(opt, '08/05/2024');
             setTimeout(() => {
                 imprimirPorSala();
             }, 1000);
@@ -34,6 +36,17 @@ $( () => {
 
     $("#pautaData").on("click", function() {
         $("#dataModal").modal("show");
+        $("#escolheData").on("click", function() {
+            $("#dataModal").modal("hide");
+            $("#resultado_pauta_superior_1").html("...");
+            $("#resultado_pauta_superior_2").html("...");
+            $("#resultado_pauta_inferior_1").html("...");
+            $("#resultado_pauta_inferior_2").html("...");
+            let dataInput = $("#data").val();
+            let dataPartes = dataInput.split('-');
+            let dataFormatada = `${dataPartes[2]}/${dataPartes[1]}/${dataPartes[0]}`;
+            pautaDia(5, dataFormatada);
+        });
     });
 
 });
@@ -77,3 +90,22 @@ function imprimirPorSala() {
     // Restaura o conteúdo original (se necessário)
     $('#resultado_pauta_superior_1').html(originalContents.html());
 }*/
+
+function datAgora() {
+    let ts = Date.now();
+	let date_ob = new Date(ts);
+	let dataOutput = "";
+    if(`${date_ob.getDate()}` < 10) {
+        dataOutput += `0${date_ob.getDate()}/`;
+    }
+    else {
+        dataOutput += `${date_ob.getDate()}/`;
+    }
+    if(`${date_ob.getMonth()}` < 9) {
+        dataOutput += `0${(date_ob.getMonth() + 1)}/${date_ob.getFullYear()}`;
+    }
+    else {
+        dataOutput += `${(date_ob.getMonth() + 1)}/${date_ob.getFullYear()}`;
+    }
+    return (dataOutput);
+}

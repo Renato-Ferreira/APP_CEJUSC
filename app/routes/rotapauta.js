@@ -42,18 +42,18 @@ const pautaRotas = (app) =>{
                     db.serialize( () => {
                         let sql = `SELECT DISTINCT a.processo_id AS processo, a.assunto AS assunto, b.horario AS horario, b.sala AS sala
                                     FROM processos a, geral_processos b
-                                    WHERE a.processo_id = b.processo_id AND b.data = '08/05/2024'
+                                    WHERE a.processo_id = b.processo_id AND b.data = ?
                                     ORDER BY b.horario, b.sala`;
                     
                         let sql2 = `SELECT DISTINCT a.processo_id AS processo, a.requerente AS requerente
                                     FROM requerentes a
-                                    WHERE a.data = '08/05/2024'`;
+                                    WHERE a.data = ?`;
 
                         let sql3 = `SELECT DISTINCT a.processo_id AS processo, a.requerido AS requerido
                                     FROM requeridos a
-                                    WHERE a.data = '08/05/2024'`;                        
+                                    WHERE a.data = ?`;                        
 
-                        db.all(sql, [], (err, row) => {
+                        db.all(sql, [req.body.date], (err, row) => {
                             if(err) {
                                 return reject(logger(`MSG ERROR: ${err.message}`));
                             }
@@ -62,7 +62,7 @@ const pautaRotas = (app) =>{
                                 logger("Consulta BD OK - rotapauta.js (sql)");
                             }
                         });
-                        db.all(sql2, [], (err, row) => {
+                        db.all(sql2, [req.body.date], (err, row) => {
                             if(err) {
                                 return reject(logger(`MSG ERROR: ${err.message}`));
                             }
@@ -71,7 +71,7 @@ const pautaRotas = (app) =>{
                                 logger("Consulta BD OK - rotapauta.js (sql1)");
                             }
                         });
-                        db.all(sql3, [], (err, row) => {
+                        db.all(sql3, [req.body.date], (err, row) => {
                             if(err) {
                                 return reject(logger(`MSG ERROR: ${err.message}`));
                             }

@@ -1,11 +1,12 @@
-function pautaDia(opcao) {
+function pautaDia(opcao, dia) {
 
     $.ajax({
         url : "/pauta/diaria",
         method: "POST",
         data: {
             tokenBD: user.tokenDB,
-            cpfUsuario: user.id
+            cpfUsuario: user.id,
+            date: dia
         },
     })
     .done(function(response){        
