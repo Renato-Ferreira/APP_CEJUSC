@@ -2,7 +2,7 @@ $( () => {
     //captura o parâmetro passado pela URL
     let url = window.location.href;	
     let query = url.split('?');
-	var parametro = query[1].split('=');
+	var parametro = query[1].split('=');    
     //
 
     //resgata informações do usuário

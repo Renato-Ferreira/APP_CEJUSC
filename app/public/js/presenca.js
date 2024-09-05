@@ -56,9 +56,34 @@ $( () => {
     });
 
     $("#btnAddParte").on("click", function() {
-        let tabela = parseInt($(`input[name="inlineRadioOptions0"`).val().slice(1,2));
-        $('#papeletaModal').modal('hide');
-        adicionaParte(tabela);
+        if($(`input[name="inlineRadioOptions0"`).val()) {
+            let tabela = parseInt($(`input[name="inlineRadioOptions0"`).val().slice(1,2));
+            console.log("tabela: ", tabela);
+            $('#papeletaModal').modal('hide');
+            adicionaParte(tabela);
+        }
+        else {
+            let tab = 0;
+            $('#papeletaModal').modal('hide');
+            $("#genericModal").modal("show");
+            $("#genericModalLabel").html("Seleção de Tipo de Participante");
+            $("#genericModalCorpo").html(`<select class="form-select" aria-label="auxilioTabela" id="auxilioTabela">
+                                            <option selected>Abra este menu de seleção</option>
+                                            <option value="1">Requerente</option>
+                                            <option value="2">Advogado do Requerente</option>
+                                            <option value="3">Requerido</option>
+                                            <option value="4">Advogado do Requerido</option>
+                                        </select>`);
+                                        $("#rodapeModalGeral").html(`<button type="button" class="btn btn-outline-success" id="btnAuxilioTabela"><b>ENVIA</b></button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><b>CANCELA</b></button>`);
+            $("#auxilioTabela").on("change", function() {
+                tab = parseInt($(this).val(), 10);                
+            });
+            $("#btnAuxilioTabela").on("click", function() { 
+                adicionaParte(tab);
+            })
+        }
+        
     });
     
 });
